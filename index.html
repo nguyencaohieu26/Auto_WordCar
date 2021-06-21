@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoWorld HomePage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
+    "
+    />
+    <!-- gg font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link base stylesheet -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="assets/css/home_page.css" />
+    <!-- link responsive -->
+    <link rel="stylesheet" href="assets/css/home__responsive.css">
+  </head>
+  <body>
+    <!-- 
+      Thiếu 
+      - cart page
+      - menu moblie
+      - cars & motors list
+      - submenu c2
+      - detail cars & motors
+      - ourblog 
+      - cars__item-heading thêm giới hạn số chữ
+     -->
+    <section class="home__page">
+      <div class="pre-loading">
+        <div class="loader"></div>
+      </div>
+      <!-- header -->
+      <header class="header">
+        <div class="header__scroll">
+          <div class="row-index">
+            <div class="header__nav">
+              <!-- logo -->
+              <div class="header__logo">
+                <a href="#" class="header__logo-link">
+                  AUTO WORLD <span>WEBSITE</span>
+                </a>
+              </div>
+              <!-- nav -->
+              <div class="menu__nav">
+                <nav class="header__nav-top">
+                  <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                      <a
+                        href="#"
+                        class="header__nav-link header__nav-link--active"
+                        >HOME</a
+                      >
+                    </li>
+                    <li class="header__nav-item">
+                      <a href="#" class="header__nav-link">
+                        <span>PRODUCTS</span>
+                        <i class="nav-icon fas fa-caret-down"></i>
+                      </a>
+                      <ul class="nav-child__list">
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">Cars</a>
+                          <!-- submenu c2 -->
+                          <ul class="submenu-c2__list">
+                            <li class="submenu-c2__item">
+                              <a href="#" class="submenu-c2__link">Honda</a>
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a href="#" class="submenu-c2__link">Toyota</a>
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a href="#" class="submenu-c2__link">Lexus</a>
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a href="#" class="submenu-c2__link">BMW</a>
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a href="#" class="submenu-c2__link">Mazada</a>
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a href="#" class="submenu-c2__link">Audi</a>
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a href="#" class="submenu-c2__link">Ford</a>
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a href="#" class="submenu-c2__link"
+                                >Mercedes Benz</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">Motors</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="header__nav-item">
+                      <a href="#" class="header__nav-link">
+                        <span>ABOUT</span>
+                        <i class="nav-icon fas fa-caret-down"></i>
+                      </a>
+                      <!-- submenu c1 -->
+                      <ul class="nav-child__list">
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">ABOUT US</a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">BLOG</a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">TEAM</a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">TESTIMONIALS</a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">FAQ</a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">TERMS</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="header__nav-item">
+                      <a href="#" class="header__nav-link">CONTACT</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- menu icon -->
+              <div class="header__menu-icon">
+                <div class="header__cart">
+                  <i class="fas fa-shopping-cart" title="Cart"></i>
+                  <span>0</span>
+                </div>
+                <div class="header__login" title="Login/ Register">
+                  <i class="fa fa-user"></i>
+                </div>
+                <!-- menu toggle -->
+                <div class="header__burger" >
+                  <i class="fa fa-bars"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- mobile nav -->
+      </header>
+      <!-- login form -->
+      <div class="auto-world__login">
+        <div class="close__loginform">
+          <i class="fa fa-times"></i>
+        </div>
+        <div class="auto-world__login-detail">
+          <div class="login-detail__left">
+            <h4>Sign into your account</h4>
+            <div class="login__chose-btns">
+              <a href="#" class="btn btn-login-chose active">Login</a><a href="#" class="btn btn-login-chose">Register</a>
+            </div>
+            <form action="#" class="login-form active" name-form ="Login" >
+              <input type="text" placeholder="Email Address" required>
+              <input type="text" placeholder="Password" required>
+              <button href="#" class="btn btn-login btn-submit-login">Login</button>
+              <p class="forgot-password">Forgot Password</p>
+            </form>
+            <form action="#" class="register-form " name-form ="Register">
+              <input type="text" placeholder="Full Name" required>
+              <input type="text" placeholder="Email Address" required>
+              <input type="text" placeholder="Password" required>
+              <button href="#" class="btn btn-login btn-submit-register">Register</button>
+            </form>
+          </div>
+          <div class="login-detail__right">
+            <div class="login-details__img">
+              <img src="assets/image/index/pexels-sourav-mishra-1149831.jpg" alt="login__img">
+            </div>
+              <div class="login-details__img-content">
+                <h5>Auto World</h5>
+                <p>WELCOME YOU</p>
+                <div class="login-socials__list">
+                  <a href="#" class="login-social__link">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" class="login-social__link">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="login-social__link">
+                    <i class="fab fa-google"></i>
+                  </a>
+                  <a href="#" class="login-social__link">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- video -->
+      <section class="video__index" id="top__video">
+        <video
+          src="assets/image/index/video/The New EQS- World Premiere - Trailer.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+        <div class="video__index-content">
+          <h2 class="home__heading">BEST <span>CAR DEALER</span> IN TOWN!</h2>
+          <a href="#" class="btn btn-contact-us">CONTACT US</a>
+        </div>
+      </section>
+      <!-- main -->
+      <main class="main__index">
+        <!-- feature cars -->
+        <div class="feature-cars">
+          <div class="row-index">
+            <h3 class="home__subheading">FEATURE <span>CARS</span></h3>
+            <div class="wavy">
+              <img src="assets/image/index/line-dec.png" alt="line__desc">
+            </div>
+            <p class="home__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ut velit sunt nihil, aut aspernatur. Lorem ipsum dolor sit amet.</p>
+            <div class="feature-cars__details">
+              <div class="feature-cars__list">
+                <div class="feature-motors__item feature-cars__item">
+                  <img
+                    src="assets/image/index/Car__list/BMW/BMW-X4_M40d-2019-1280-03.jpg"
+                    alt="BMW-X4_M40d"
+                    class="feature-cars__img"
+                  />
+                  <div class="cars__item-details">
+                    <p>
+                      <span class="cars__item-price cars__item-price--strike"
+                        ><strike>$11999</strike></span
+                      >
+                      <span class="cars__item-price">$11779</span>
+                    </p>
+                    <h4 class="cars__item-heading">BMW-X4_M40d-2019</h4>
+                    <div class="cars__item-feature">
+                      <div class="cars__item-feature-details">
+                        <i class="fas fa-tachometer-alt"></i> 130 000km
+                      </div>
+                      <div class="cars__item-feature-details">
+                        <i class="fas fa-cube"></i></i> 1800 cc
+                      </div>
+                      <div class="cars__item-feature-details">
+                        <i class="fa fa-cog"></i> Manual
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-view-car">
+                      <i class="fas fa-plus"></i>
+                      View Car
+                    </a>
+                  </div>
+                </div>
+                <div class="feature-motors__item feature-cars__item">
+                  <img
+                    src="assets/image/index/Car__list/Audi/Audi TTS Roadster.jpg"
+                    alt="Lexus_IS300"
+                    class="feature-cars__img"
+                  />
+                  <div class="cars__item-details">
+                    <p>
+                      <span class="cars__item-price cars__item-price--strike"
+                        ><strike>$11999</strike></span
+                      >
+                      <span class="cars__item-price">$11779</span>
+                    </p>
+                    <h4 class="cars__item-heading">Audi TTS Roadster</h4>
+                    <div class="cars__item-feature">
+                      <div class="cars__item-feature-details">
+                        <i class="fas fa-tachometer-alt"></i> 150 000km
+                      </div>
+                      <div class="cars__item-feature-details">
+                        <i class="fas fa-cube"></i>1600 cc
+                      </div>
+                      <div class="cars__item-feature-details">
+                        <i class="fa fa-cog"></i> Manual
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-view-car">
+                      <i class="fas fa-plus"></i>
+                      View Car
+                    </a>
+                  </div>
+                </div>
+                <div class="feature-motors__item feature-cars__item">
+                  <img
+                    src="assets/image/index/Car__list/Audi/The Audi A3 Sportback.jpg"
+                    alt="The Audi A3"
+                    class="feature-cars__img"
+                  />
+                  <div class="cars__item-details">
+                    <p>
+                      <span class="cars__item-price cars__item-price--strike"
+                        ><strike>$11999</strike></span
+                      >
+                      <span class="cars__item-price">$11779</span>
+                    </p>
+                    <h4 class="cars__item-heading">Audi A3 Sportback</h4>
+                    <div class="cars__item-feature">
+                      <div class="cars__item-feature-details">
+                        <i class="fas fa-tachometer-alt"></i> 150 000km
+                      </div>
+                      <div class="cars__item-feature-details">
+                        <i class="fas fa-cube"></i> 1600 cc
+                      </div>
+                      <div class="cars__item-feature-details">
+                        <i class="fa fa-cog"></i> Manual
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-view-car">
+                      <i class="fas fa-plus"></i>
+                      View Car
+                    </a>
+                  </div>
+                </div>
+                <div class="feature-motors__item feature-cars__item">
+                  <img
+                    src="assets/image/index/Car__list/Mec/martin-katler-y3neNkE6efI-unsplash.jpg"
+                    alt=""
+                    class="feature-cars__img"
+                  />
+                  <div class="cars__item-details">
+                    <p>
+                      <span class="cars__item-price cars__item-price--strike"
+                        ><strike>$11999</strike></span
+                      >
+                      <span class="cars__item-price">$11779</span>
+                    </p>
+                    <h4 class="cars__item-heading">Mercedes Benz S-class</h4>
+                    <div class="cars__item-feature">
+                      <div class="cars__item-feature-details">
+                        <i class="fas fa-tachometer-alt"></i> 150 000km
+                      </div>
+                      <div class="cars__item-feature-details">
+                        <i class="fas fa-cube"></i> 1600 cc
+                      </div>
+                      <div class="cars__item-feature-details">
+                        <i class="fa fa-cog"></i> Manual
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-view-car">
+                      <i class="fas fa-plus"></i>
+                      View Car
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-view-carmove btn-contact-us">VIEW CARS</a>
+          </div>
+        </div>
+        <!-- feature motor -->
+        <div class="feature-motors">
+          <div class="row-index">
+            <h3 class="home__subheading">FEATURE <span>MOTORS</span></h3>
+           <div class="wavy">
+             <img src="assets/image/index/line-dec.png" alt="line__desc">
+           </div>
+            <p class="home__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nostrum delectus labore blanditiis velit quaerat praesentium a et omnis aut.</p>
+            <div class="feature-motors__details feature-cars__details">
+              <div class="feature-motors__list feature-cars__list">
+                <div class="feature-motors__item feature-cars__item">
+                  <img
+                    src="assets/image/index/bmw_motor/Marken_BMW_Motorrad_K75.jpg"
+                    alt="bmw_moto2"
+                    class="feature-cars__img"
+                  />
+                  <div class="cars__item-details">
+                    <p>
+                      <span class="cars__item-price cars__item-price--strike"
+                        ><strike>$11999</strike></span
+                      >
+                      <span class="cars__item-price">$10000</span>
+                    </p>
+                    <h4 class="cars__item-heading">BMW-Motor</h4>
+                    <div class="cars__item-feature">
+                      <div class="cars__item-feature-details">
+                        <i class="fas fa-tachometer-alt"></i> 130 000km
+                      </div>
+                      <div class="cars__item-feature-details">
+                        <i class="fas fa-cube"></i></i> 1800 cc
+                      </div>
+                      <div class="cars__item-feature-details">
+                        <i class="fa fa-cog"></i> Manual
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-view-car">
+                      <i class="fas fa-plus"></i>
+                      View Motor
+                    </a>
+                  </div>
+                </div>
+                <div class="feature-motors__item feature-cars__item">
+                  <img
+                    src="assets/image/index/bmw_motor/BMW_Motorrad_3.jpg"
+                    alt="BMW_Motorrad"
+                    class="feature-cars__img"
+                  />
+                  <div class="cars__item-details">
+                    <p>
+                      <span class="cars__item-price cars__item-price--strike"
+                        ><strike>$11999</strike></span
+                      >
+                      <span class="cars__item-price">$10500</span>
+                    </p>
+                    <h4 class="cars__item-heading">BMW_Motorrad</h4>
+                    <div class="cars__item-feature">
+                      <div class="cars__item-feature-details">
+                        <i class="fas fa-tachometer-alt"></i> 150 000km
+                      </div>
+                      <div class="cars__item-feature-details">
+                        <i class="fas fa-cube"></i>1600 cc
+                      </div>
+                      <div class="cars__item-feature-details">
+                        <i class="fa fa-cog"></i> Manual
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-view-car">
+                      <i class="fas fa-plus"></i>
+                      View Motor
+                    </a>
+                  </div>
+                </div>
+                <div class="feature-motors__item feature-cars__item">
+                  <img
+                    src="assets/image/index/hl_motor/Engines-Engineering-Harley-Davidson-XR338-Concept-2-667x500.jpg"
+                    alt="low-rider-s-f20-motorcycle"
+                    class="feature-cars__img"
+                  />
+                  <div class="cars__item-details">
+                    <p>
+                      <span class="cars__item-price cars__item-price--strike"
+                        ><strike>$11999</strike></span
+                      >
+                      <span class="cars__item-price">$11000</span>
+                    </p>
+                    <h4 class="cars__item-heading">HL-Low-rider-s-f20 </h4>
+                    <div class="cars__item-feature">
+                      <div class="cars__item-feature-details">
+                        <i class="fas fa-tachometer-alt"></i> 150 000km
+                      </div>
+                      <div class="cars__item-feature-details">
+                        <i class="fas fa-cube"></i> 1600 cc
+                      </div>
+                      <div class="cars__item-feature-details">
+                        <i class="fa fa-cog"></i> Manual
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-view-car">
+                      <i class="fas fa-plus"></i>
+                      View Motor
+                    </a>
+                  </div>
+                </div>
+                <div class="feature-motors__item feature-cars__item">
+                  <img
+                    src="assets/image/index/hl_motor/2021-low-rider-s-motorcycle-g2.jpg"
+                    alt="harley-sportster-iron-883"
+                    class="feature-cars__img"
+                  />
+                  <div class="cars__item-details">
+                    <p>
+                      <span class="cars__item-price cars__item-price--strike"
+                        ><strike>$11999</strike></span
+                      >
+                      <span class="cars__item-price">$11000</span>
+                    </p>
+                    <h4 class="cars__item-heading">Harley-Iron-883</h4>
+                    <div class="cars__item-feature">
+                      <div class="cars__item-feature-details">
+                        <i class="fas fa-tachometer-alt"></i> 150 000km
+                      </div>
+                      <div class="cars__item-feature-details">
+                        <i class="fas fa-cube"></i> 1600 cc
+                      </div>
+                      <div class="cars__item-feature-details">
+                        <i class="fa fa-cog"></i> Manual
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-view-car">
+                      <i class="fas fa-plus"></i>
+                      View Motor
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-view-carmove btn-contact-us">VIEW MOTORS</a>
+          </div>
+        </div>
+        <!-- read about us -->
+        <section class="about-us">
+          <!-- image background -->
+          <div class="row-index">
+            <h3 class="home__subheading">READ <span>ABOUT US</span></h3>
+            <div class="wavy">
+              <img src="assets/image/index/line-dec.png" alt="line__desc">
+            </div>
+            <p class="home__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed adipisci laudantium unde alias dolores saepe tenetur. Consequatur ?</p>
+            <div class="about-us__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia est, nesciunt similique voluptates culpa sunt nulla non
+                magni beatae dolorum iste dignissimos quibusdam accusamus
+                commodi aut recusandae. Deserunt, ducimus ut?
+              </p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repudiandae qui facilis velit pariatur, dolore, accusantium amet
+                architecto voluptates ratione dolores, quis ipsam saepe? Eveniet
+                blanditiis atque ipsa expedita odio quidem. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Excepturi saepe
+                architecto omnis, fugiat amet maxime.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- read our blog -->
+        <section class="read-ourblog">
+          <div class="row-index">
+            <h3 class="home__subheading">READ OUR<span>BLOG</span></h3>
+            <div class="wavy">
+              <img src="assets/image/index/line-dec.png" alt="">
+            </div>
+            <p class="home__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officia tempora sit id, assumenda consectetur eaque voluptates voluptatibus!</p>
+            <div class="read-ourblog__details">
+              <div class="read-ourblog__btn">
+                <a href="#" class="btn btn-ourblog-button">Blog 1</a>
+                <a href="#" class="btn btn-ourblog-button">Blog 2</a>
+                <a href="#" class="btn btn-ourblog-button">Blog 3</a>
+                <a href="#" class="btn btn-ourblog-button">Blog 4</a>
+                <a href="#" class="btn btn-read-more">READ MORE</a>
+              </div>
+              <div class="read-ourblog__content">
+                <img class="read-ourblog__img" src="assets/image/index/blog__img/blog-image-1.jpg" alt="blog__img" />
+                <div class="ourblog__content-details">
+                  <h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  </h4>
+                  <div class="ourblog__content-info">
+                    <div class="ourblog-info__item">
+                      <i class="fa fa-user"></i>
+                      <span>John Doe</span>
+                    </div>
+                    <div class="ourblog-info__item">
+                      <i class="far fa-calendar-alt"></i>
+                      <span>27.07.2020 10:10</span>
+                    </div>
+                    <div class="ourblog-info__item">
+                      <i class="fas fa-comments"></i>
+                      <span>comments</span>
+                    </div>
+                  </div>
+                  <p>
+                    Integer dapibus, est vel dapibus mattis, sem mauris luctus
+                    leo, ac pulvinar quam tortor a velit. Praesent ultrices erat
+                    ante, in ultricies augue ultricies faucibus. Nam tellus
+                    nibh, ullamcorper at mattis non, rhoncus sed massa. Cras
+                    quis pulvinar eros. Orci varius natoque penatibus et magnis
+                    dis parturient montes, nascetur ridiculus mus.
+                  </p>
+                  <a href="#" class="btn btn-continue-reading btn-read-more"
+                    >CONTINUE READING</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ads -->
+        <sectiton class="ads">
+          <div class="row-index">
+            <div class="ads__img">
+              <img src="assets/image/index/3-970x250_61817717456371713.jpg" alt="ads__image">
+            </div>
+          </div>
+        </sectiton>
+         <!-- our partner -->
+         <section class="our-partner">
+          <div class="row-index">
+            <h3 class="home__subheading">OUR PARTNER</h3>
+            <div class="wavy">
+              <img src="assets/image/index/line-dec.png" alt="line__desc">
+            </div>
+            <p class="home__desc">We only work with the best companies around the globe</p>
+            <div class="our-partner__list">
+              <div class="our-partner__item">
+                <img src="assets/image/index/partner/1.png" alt="partner1">
+              </div>
+              <div class="our-partner__item">
+                <img src="assets/image/index/partner/2.png" alt="partner2">
+              </div>
+              <div class="our-partner__item">
+                <img src="assets/image/index/partner/3.png" alt="partner3">
+              </div>
+              <div class="our-partner__item">
+
+                <img src="assets/image/index/partner/4.png" alt="partner4">
+              </div>
+              <div class="our-partner__item">
+                <img src="assets/image/index/partner/5.png" alt="partner5">
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- contact us -->
+        <section class="contact-us">
+          <!-- image bg -->
+          <div class="row-index">
+            <h2>SEND US A <span>MESSAGE</span></h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+              velit accusantium itaque in quod labore corporis quis ea voluptate
+              omnis.
+            </p>
+            <a href="#" class="btn btn-contact-us">CONTACT US</a>
+          </div>
+        </section>
+        <!-- testimonials -->
+        <section class="testimonials">
+          <div class="row-index">
+            <h3 class="home__subheading">READ OUR <span>TESTIMONIALS</span></h3>
+            <div class="wavy">
+              <img src="assets/image/index/line-dec.png" alt="">
+            </div>
+            <p class="home__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aliquam cupiditate quis sed, obcaecati asperiores optio consequatur vero?</p>
+            <div class="testimonials__details">
+              <div class="testimonials__list">
+                <div class="testimonials__item">
+                  <img
+                    src="assets/image/index/testimonials__index/testimonial_person1.jpg"
+                    alt="testimonial_per1"
+                  />
+                  <div class="testimonials__item-content">
+                    <p class="person__name">John Doe</p>
+                    <p class="person__desc">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Alias dolores fugiat accusantium cumque voluptatibus est
+                      Lorem ipsum dolor sit amet consectetur, adipisicing.
+                    </p>
+                  </div>
+                </div>
+                <div class="testimonials__item">
+                  <img
+                    src="assets/image/index/testimonials__index/testimonial_person2.jpg"
+                    alt="testimonial_per2"
+                  />
+                  <div class="testimonials__item-content">
+                    <p class="person__name">John Doe</p>
+                    <p class="person__desc">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Alias dolores fugiat accusantium cumque voluptatibus est
+                      Lorem ipsum dolor sit amet consectetur, adipisicing.
+                    </p>
+                  </div>
+                </div>
+                <div class="testimonials__item">
+                  <img
+                    src="assets/image/index/testimonials__index/testimonial_person3.jpg"
+                    alt="testimonial_per3"
+                  />
+                  <div class="testimonials__item-content">
+                    <p class="person__name">John Doe</p>
+                    <p class="person__desc">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Alias dolores fugiat accusantium cumque voluptatibus est
+                      Lorem ipsum dolor sit amet consectetur, adipisicing.
+                    </p>
+                  </div>
+                </div>
+                <div class="testimonials__item">
+                  <img
+                    src="assets/image/index/testimonials__index/testimonial_person4.jpg"
+                    alt="testimonial_per4"
+                  />
+                  <div class="testimonials__item-content">
+                    <p class="person__name">John Doe</p>
+                    <p class="person__desc">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Alias dolores fugiat accusantium cumque voluptatibus est
+                      Lorem ipsum dolor sit amet consectetur, adipisicing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-read-more">READ MORE</a>
+          </div>
+        </section>
+        <!-- back to top -->
+        <div class="back-to-top">
+          <a href="#top__video"
+            >Back to top
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </main>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer__details">
+          <!-- footer top -->
+          <div class="footer__top">
+            <div class="row-index">
+              <div class="footer__top-list">
+                <div class="footer__top-item">
+                  <h3 class="footer__logo">
+                    <a href="#" class="footer__logo-link">AUTO WORLD</a>
+                  </h3>
+                  <div class="footer__top-content">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Rerum, vel magni, ad quidem sapiente soluta quam odit
+                      aspernatur nostrum fugit a. Architecto, tempora repellat
+                      vitae excepturi sapiente sequi consequuntur dolor.
+                    </p>
+                  </div>
+                </div>
+                <div class="footer__top-item">
+                  <h3 class="footer__top-heading">Contact Info</h3>
+                  <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-map-pin"></i>
+                        <span>20/F Green Road, Dhanmondi, Dhaka</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <span>info@gmail.com</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-phone"></i>
+                        <span>+0999 9999 999</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-fax"></i>
+                        <span>+0477 85X6 552</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__top-item">
+                  <h3 class="footer__top-heading">Useful Links</h3>
+                  <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Home</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Products</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>About Us</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Testimonials</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Blog</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Contact</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__top-item">
+                  <h3 class="footer__top-heading">Subscribe</h3>
+                  <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit.
+                  </p>
+                  <form action="#" class="footer-contact">
+                    <input type="text" placeholder="Enter Address" />
+                    <a href="" class="btn btn-footer-contact">
+                      <i class="fab fa-telegram-plane"></i>
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- footer bottom -->
+          <div class="footer__bottom">
+            <div class="row-index">
+              <div class="footer__bottom-details">
+                <p class="copy-right">&copy; Made with love</p>
+                <div class="footer__social-icon">
+                  <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                      <a href="#" class="footer__social-link social--bg-blue1">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="footer__social-item">
+                      <a href="#" class="footer__social-link social--bg-blue3">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="footer__social-item">
+                      <a href="#" class="footer__social-link social--bg-red">
+                        <i class="fab fa-google-plus-g"></i>
+                      </a>
+                    </li>
+                    <li class="footer__social-item">
+                      <a href="#" class="footer__social-link social--bg-blue2">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  ></script>
+        <script>
+        // smooth scroll 
+          $(document).ready(function(){
+            $('a').click(function(event){
+              $('html, body').animate({
+                  scrollTop: $( $.attr(this, 'href') ).offset().top
+              }, 1100);
+              event.preventDefault();
+          });
+          })
+          </script>
+    <script src="assets/js/home__page.js"></script>
+  </body>
+</html>
