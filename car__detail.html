@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Detail</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
+"
+    />
+    <!-- gg font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link base stylesheet -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="assets/css/Home/home_page.css" />
+    <!-- link responsive for home page-->
+    <link rel="stylesheet" href="assets/css/Home/home__responsive.css" />
+    <!-- link stylesheet for car details -->
+    <link rel="stylesheet" href="assets/css/CarDetail/car_details.css" />
+  <!-- link responsive for car details -->
+  <link rel="stylesheet" href="assets/css/CarDetail/car_details-responsive.css">
+  </head>
+  <body>
+    <section class="car-details__page">
+      <div class="pre-loading">
+        <div class="loader"></div>
+      </div>
+      <!-- header -->
+      <header class="header">
+        <div class="header__scroll">
+          <div class="row-index">
+            <div class="header__nav">
+              <!-- logo -->
+              <div class="header__logo">
+                <a href="index.html" class="header__logo-link">
+                  AUTO WORLD <span>WEBSITE</span>
+                </a>
+              </div>
+              <!-- nav -->
+              <div class="menu__nav">
+                <nav class="header__nav-top">
+                  <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                      <a
+                        href="index.html"
+                        class="header__nav-link"
+                        >HOME</a
+                      >
+                    </li>
+                    <li class="header__nav-item">
+                      <a href="#" class="header__nav-link">
+                        <span>PRODUCTS</span>
+                        <i class="nav-icon fas fa-caret-down"></i>
+                      </a>
+                      <!-- nav child c1 -->
+                      <ul class="nav-child__list">
+                        <li class="nav__child-item">
+                          <a href="car__list.html" class="nav-child__link">Cars</a>
+                          <!-- submenu c2 -->
+                          <ul class="submenu-c2__list">
+                            <li class="submenu-c2__item">
+                              <a href="car__detail.html" class="submenu-c2__link">Honda</a>
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a href="car__detail.html" class="submenu-c2__link">Toyota</a>
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a href="car__detail.html" class="submenu-c2__link">Lexus</a>
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a href="car__detail.html" class="submenu-c2__link">BMW</a>
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a href="car__detail.html" class="submenu-c2__link">Mazada</a>
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a href="car__detail.html" class="submenu-c2__link">Audi</a>
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a href="car__detail.html" class="submenu-c2__link">Ford</a>
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a href="car__detail.html" class="submenu-c2__link"
+                                >Mercedes Benz</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="motor__list.html" class="nav-child__link">Motors</a>
+                          <!-- submenu c2 -->
+                          <ul class="submenu-c2__list">
+                            <li class="submenu-c2__item">
+                              <a href="motor__detail.html" class="submenu-c2__link">BMW Motor</a>
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a href="motor__detail.html" class="submenu-c2__link">Harley Davidson Motor</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="header__nav-item">
+                      <a href="#" class="header__nav-link">
+                        <span>ABOUT</span>
+                        <i class="nav-icon fas fa-caret-down"></i>
+                      </a>
+                      <!-- submenu c1 -->
+                      <ul class="nav-child__list">
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">ABOUT US</a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">BLOG</a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">TEAM</a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">TESTIMONIALS</a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">FAQ</a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">TERMS</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="header__nav-item">
+                      <a href="#" class="header__nav-link">
+                        <span>SHOP</span>
+                        <i class="nav-icon fas fa-caret-down"></i>
+                      </a>
+                      <ul class="nav-child__list">
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">Finance </a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">Shop Cart</a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">Shop Checkout</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="header__nav-item">
+                      <a href="#" class="header__nav-link">CONTACT</a>
+                    </li>            
+                  </ul>
+                </nav>
+              </div>
+              <!-- menu icon -->
+              <div class="header__menu-icon">
+                <div class="header__login" title="Login/ Register">
+                  <i class="fa fa-user"></i>
+                </div>
+                <!-- menu toggle -->
+                <div class="header__burger" >
+                  <i class="fa fa-bars"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- mobile nav -->
+        <nav class="header__mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a href="index.html" class="mobile-nav__link">HOME</a>
+            </li>
+            <li class="mobile-nav__item">
+              <button class="mobile-nav__link">
+                <span>PRODUCTS</span>
+                <i class="mobile-nav-icon fas fa-caret-down"></i>
+              </button>
+              <ul class="nav-mobile__child-list">
+                <li class="nav-mobile__child-item">
+                  <a href="car__list.html" class="nav-mobile__child-link">Cars</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="motor__list.html" class="nav-mobile__child-link">Motors</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-nav__item">
+              <button class="mobile-nav__link">
+                <span>ABOUT</span>
+                <i class="mobile-nav-icon fas fa-caret-down"></i>
+              </button>
+              <ul class="nav-mobile__child-list">
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">About Us</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Blog</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Team</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Testimonials</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">FAQ</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Terms</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-nav__item">
+              <button class="mobile-nav__link">
+                <span>SHOP</span>
+                <i class="mobile-nav-icon fas fa-caret-down"></i>
+              </button>
+              <ul class="nav-mobile__child-list">
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Finance</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Shop Cart</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Shop Checkout</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- image top -->
+      <section class="header__img-top" id="top">
+        <img
+          src="assets/image/index/Car__list/Lexus/Lexux_NX300hAWD.jpg"
+          alt=""
+        />
+        <p class="car-product__desc">
+          All motorcycles are supplied only with equipment required by law (e.g.
+          reflectors as per Euro 4 standard). Lexus UK reserves the right to
+          alter prices and specification without notice. Lexus UK has made every
+          effort to ensure the accuracy of information but does not accept
+          liability for any errors or omissions. Actual configuration may differ
+          slightly in appearance to images shown.
+        </p>
+        <div class="car-product__offer">
+          <h4 class="car-product__name">Lexus NX300</h4>
+          <p class="car-product__price">From $11.000</p>
+          <a href="#" class="btn btn-offer btn-contact-now">CONTACT A DEALER</a>
+          <a href="#" class="btn btn-offer btn-configure">
+            <span>CONFIGURE NOW</span>
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+          <p class="car-product__offer-desc">
+            The price shown is a non-binding recommendation of the manufacturer
+            is including 20% VAT. Modifications and mistakes reserved. If you
+            have any questions, please speak to we customer services
+          </p>
+          <p class="car-product__offer-desc1">
+            All motorcycles are supplied only with equipment required by law
+            (e.g. reflectors as per Euro 4 standard). Lexus UK reserves
+            the right to alter prices and specification without notice. Lexus
+              UK has made every effort to ensure the accuracy of
+            information but does not accept liability for any errors or
+            omissions. Actual configuration may differ slightly in appearance to
+            images shown.
+          </p>
+        </div>
+      </section>
+      <!-- login form -->
+      <div class="auto-world__login">
+        <div class="close__loginform">
+          <i class="fa fa-times"></i>
+        </div>
+        <div class="auto-world__login-detail">
+          <div class="login-detail__left">
+            <h4>Sign into your account</h4>
+            <div class="login__chose-btns">
+              <a href="#" class="btn btn-login-chose active">Login</a
+              ><a href="#" class="btn btn-login-chose">Register</a>
+            </div>
+            <form action="#" class="login-form active" name-form="Login">
+              <input type="text" placeholder="Email Address" required />
+              <input type="text" placeholder="Password" required />
+              <button href="#" class="btn btn-login btn-submit-login">
+                Login
+              </button>
+              <p class="forgot-password">Forgot Password</p>
+            </form>
+            <form action="#" class="register-form" name-form="Register">
+              <input type="text" placeholder="Full Name" required />
+              <input type="text" placeholder="Email Address" required />
+              <input type="text" placeholder="Password" required />
+              <button href="#" class="btn btn-login btn-submit-register">
+                Register
+              </button>
+            </form>
+          </div>
+          <div class="login-detail__right">
+            <div class="login-details__img">
+              <img
+                src="assets/image/index/pexels-sourav-mishra-1149831.jpg"
+                alt="login__img"
+              />
+            </div>
+            <div class="login-details__img-content">
+              <h5>Auto World</h5>
+              <p>WELCOME YOU</p>
+              <div class="login-socials__list">
+                <a href="#" class="login-social__link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="login-social__link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="login-social__link">
+                  <i class="fab fa-google"></i>
+                </a>
+                <a href="#" class="login-social__link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <main class="main__car-details">
+        <div class="product__details">
+          <!-- info -->
+          <section class="car-product__info">
+            <div class="row-index">
+              <h2 class="car-product__heading">THE NEW LEXUS NX300</h2>
+              <p class="car-product__quote">Soul is all that matters.</p>
+              <div class="car-product__info-details">
+                <div class="car-product__info-left">
+                  <p>
+                    The new Lexus NX300 invokes our history and the iconic
+                    hallmarks of our brand which we have worked very hard on.
+                    The result: a cruiser that is full of character boasting a
+                    boxer engine with the most displacement that we have ever
+                    built as well as timeless design features, such as the white
+                    double striping on the Lexus NX300 First Edition.
+                    Especially, The 2021 Lexus NX 300 ranks near the bottom of
+                    the luxury compact SUV class. The NX offers a high-end and
+                    comfortable interior with lots of standard safety features,
+                    but it also has middling performance and a frustrating
+                    infotainment system.
+                  </p>
+                </div>
+                <div class="car-product__info-right">
+                  <img
+                    src="assets/image/car-details/thanhnien-lexus-nx-1_gdoz.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- specification -->
+          <section class="car-product__spefication">
+            <div class="row-index">
+              <h4 class="car_details__subheading">SPECIFICATION</h4>
+              <p>2021 Lexus NX300</p>
+              <p>Standard Specification</p>
+             <div class="car__specification-details">
+              <ul class="car__specification-list">
+                <li><i class="far fa-dot-circle"></i>MPG: 22 City / 28 Hwy</li>
+                <li><i class="far fa-dot-circle"></i>5 Seats</li>
+                <li><i class="far fa-dot-circle"></i>Fuel: Gasoline Fuel</li>
+                <li>
+                  <i class="far fa-dot-circle"></i>Horsepower (Net @ RPM): 235 @
+                  4800
+                </li>
+                <li>
+                  <i class="far fa-dot-circle"></i>Maximum Trailering Capacity
+                  (lbs.): 2000
+                </li>
+                <li>
+                  <i class="far fa-dot-circle"></i>Body Style: Sport Utility
+                </li>
+                <li><i class="far fa-dot-circle"></i>Automatic Transmission</li>
+                <li><i class="far fa-dot-circle"></i>Passenger airbag </li>
+                <li><i class="far fa-dot-circle"></i> CD player & Radio</li>
+              </ul>
+              <div class="car__specification-images">
+                <img src="" class="car__speImage" alt="">
+                <i class="fas fa-caret-left btnPrevSpe"></i>
+                <i class="fas fa-caret-right btnNextSpe"></i>
+              </div>
+             </div>
+            </div>
+          </section>
+          <!-- design demo -->
+          <section class="car-product__desgin">
+            <div class="row-index">
+              <h4 class="car_details__subheading">
+                The design of the LEXUS_NX300
+              </h4>
+            </div>
+            <div class="car-product__demo">
+              <img src="assets/image/car-details/car-demo/large1.jpg" alt="" />
+              <div class="car-product__demo-option">
+                <img
+                  src="assets/image/car-details/car-option/option1.png"
+                  alt=""
+                  class="btn-product-option"
+                />
+                <img
+                  src="assets/image/car-details/car-option/option2.png"
+                  alt=""
+                  class="btn-product-option"
+                />
+                <img
+                  src="assets/image/car-details/car-option/option3.png"
+                  alt=""
+                  class="btn-product-option"
+                />
+              </div>
+            </div>
+            <div class="row-index">
+              <div class="car-product-demo__desc">
+                <p>
+                  <b>2021 Lexus NX Color Options:</b> </br>Exterior There are many
+                  eye-catching Lexus NX colors that you can sport on Brandon
+                  roads with configurations such as the NX 300, NX 300 F Sport,
+                  and NX 300 Luxury, as well as hybrid options like the NX 300h
+                  and 300h Luxury trim packages. From sleek and dark to bold and
+                  vibrant, there’s plenty of Lexus NX color options to suit your
+                  style
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- warranty -->
+          <section class="car-product__warranty">
+            <div class="row-index">
+              <h4>3 years warranty.</h4>
+              <p><b>Ride on & on & on. We`re giving you an extra year. </b></p>
+              <p>Now there's a 3-year warranty on all models.</p>
+            <a href="#" class="btn btn-find-more-warranty">
+              <span>Find our more</span>
+              <i class="fas fa-external-link-square-alt"></i>
+            </a>
+            </div>
+          </section>
+          <!-- video trailer -->
+          <section class="car-product__trailer">
+            <div class="row-index">
+              <h4>Let's watch the newest trailer about Lexus NX300</h4>
+            </div>
+            <video src="assets/image/car-details/The All New Lexus NX - Trailer.webm" autoplay muted></video>
+          </section>
+          <!--  -->
+          <section class="car-product-recomment">
+            <div class="row-index">
+              <h4 class="car-product-recomment__heading">Shoppers Should Also Consider... </h4>
+              <!-- recomment slider -->
+              <div class="car-product-recomment-list owl-carousel owl-theme">
+                <div class="car-product-recomment-item">
+                  <img src="assets/image/index/Car__list/Lexus/Lexux_NX300hAWD.jpg" alt="">
+                  <div class="car-product-recomment-details">
+                    <h4>
+                      <a class="car-product-recomment-name" href="car__detail.html">BMW A3</a>
+                    </h4>
+                    <p class="car-product-recomment-desc">#1 In Reasonably Car</p>
+                  </div>
+                </div>
+                <div class="car-product-recomment-item">
+                  <img src="assets/image/index/Car__list/BMW/bmw-7series-sedan.jpg" alt="">
+                  <div class="car-product-recomment-details">
+                    <h4>
+                      <a class="car-product-recomment-name" href="car__detail.html">BMW A3</a>
+                    </h4>
+                    <p class="car-product-recomment-desc">#1 In Reasonably Car</p>
+                  </div>
+                </div>
+                <div class="car-product-recomment-item">
+                  <img src="assets/image/index/Car__list/BMW/BMW-X4_M40d-2019-1280-03.jpg" alt="">
+                  <div class="car-product-recomment-details">
+                    <h4>
+                      <a class="car-product-recomment-name" href="car__detail.html">BMW A3</a>
+                    </h4>
+                    <p class="car-product-recomment-desc">#1 In Reasonably Car</p>
+                  </div>
+                </div>
+                <div class="car-product-recomment-item">
+                  <img src="assets/image/index/Car__list/Lexus/Lexus_IS300.jpg" alt="">
+                  <div class="car-product-recomment-details">
+                    <h4>
+                      <a class="car-product-recomment-name" href="car__detail.html">BMW A3</a>
+                    </h4>
+                    <p class="car-product-recomment-desc">#1 In Reasonably Car</p>
+                  </div>
+                </div>
+                <div class="car-product-recomment-item">
+                  <img src="assets/image/index/Car__list/Mec/mercedes-benz-e-class-facelift-2021.jpg" alt="">
+                  <div class="car-product-recomment-details">
+                    <h4>
+                      <a class="car-product-recomment-name" href="car__detail.html">BMW A3</a>
+                    </h4>
+                    <p class="car-product-recomment-desc">#1 In Reasonably Car</p>
+                  </div>
+                </div>
+                <div class="car-product-recomment-item">
+                  <img src="assets/image/index/Car__list/Mec/william-chiesurin-rQa4wGvdziQ-unsplash.jpg" alt="">
+                  <div class="car-product-recomment-details">
+                    <h4>
+                      <a class="car-product-recomment-name" href="car__detail.html">BMW A3</a>
+                    </h4>
+                    <p class="car-product-recomment-desc">#1 In Reasonably Car</p>
+                  </div>
+                </div>
+                <div class="car-product-recomment-item">
+                  <img src="assets/image/index/Car__list/Mec/martin-katler-y3neNkE6efI-unsplash.jpg" alt="">
+                  <div class="car-product-recomment-details">
+                    <h4>
+                      <a class="car-product-recomment-name" href="car__detail.html">BMW A3</a>
+                    </h4>
+                    <p class="car-product-recomment-desc">#1 In Reasonably Car</p>
+                  </div>
+                </div>
+                <div class="car-product-recomment-item">
+                  <img src="assets/image/index/Car__list/Audi/The Audi A3 Sportback.jpg" alt="">
+                  <div class="car-product-recomment-details">
+                    <h4>
+                      <a class="car-product-recomment-name" href="car__detail.html">BMW A3</a>
+                    </h4>
+                    <p class="car-product-recomment-desc">#1 In Reasonably Car</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- test drive button -->
+          <div class="testdrive__button">
+            <a href="#" class="btn btn-test-drive">Test Drive</a>
+          </div>
+        </div>
+      </main>
+      <div class="back-to-top">
+        <a href="#top"
+          >Back to top
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer__details">
+          <!-- footer top -->
+          <div class="footer__top">
+            <div class="row-index">
+              <div class="footer__top-list">
+                <div class="footer__top-item">
+                  <h3 class="footer__logo">
+                    <a href="#" class="footer__logo-link">AUTO WORLD</a>
+                  </h3>
+                  <div class="footer__top-content">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Rerum, vel magni, ad quidem sapiente soluta quam odit
+                      aspernatur nostrum fugit a. Architecto, tempora repellat
+                      vitae excepturi sapiente sequi consequuntur dolor.
+                    </p>
+                  </div>
+                </div>
+                <div class="footer__top-item">
+                  <h3 class="footer__top-heading">Contact Info</h3>
+                  <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-map-pin"></i>
+                        <span>20/F Green Road, Dhanmondi, Dhaka</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="mailto:info@gmail.com" class="footer__nav-link">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <span>info@gmail.com</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="tel:099999999" class="footer__nav-link">
+                        <i class="fas fa-phone"></i>
+                        <span>+0999 9999 999</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-fax"></i>
+                        <span>+0477 85X6 552</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__top-item">
+                  <h3 class="footer__top-heading">Useful Links</h3>
+                  <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                      <a href="index.html" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Home</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Products</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>About Us</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Testimonials</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Blog</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Shop</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Contact</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__top-item">
+                  <h3 class="footer__top-heading">Subscribe</h3>
+                  <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit.
+                  </p>
+                  <form action="#" class="footer-contact">
+                    <input type="text" placeholder="Enter Address" />
+                    <a href="" class="btn btn-footer-contact">
+                      <i class="fab fa-telegram-plane"></i>
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- footer bottom -->
+          <div class="footer__bottom">
+            <div class="row-index">
+              <div class="footer__bottom-details">
+                <p class="copy-right">&copy; Made with love</p>
+                <div class="footer__social-icon">
+                  <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                      <a href="#" class="footer__social-link social--bg-blue1">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="footer__social-item">
+                      <a href="#" class="footer__social-link social--bg-blue3">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="footer__social-item">
+                      <a href="#" class="footer__social-link social--bg-red">
+                        <i class="fab fa-google-plus-g"></i>
+                      </a>
+                    </li>
+                    <li class="footer__social-item">
+                      <a href="#" class="footer__social-link social--bg-blue2">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/home__page.js"></script>
+    <script src="assets/js/car_page.js"></script>
+    <script src="assets/js/car_details.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js
+       "></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css
+       "
+    />
+    <script>
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        responsive:{
+          0:{
+            items:1,
+          },
+          400:{
+            items:2,
+          },
+          600:{
+            items:3,
+          },
+          800:{
+            items:4,
+          }
+        },
+        animateOut: "fadeOut",
+      });
+      $(".play").on("click", function () {
+        owl.trigger("play.owl.autoplay", [4000]);
+      });
+      $(".stop").on("click", function () {
+        owl.trigger("stop.owl.autoplay");
+      });
+    </script>
+</body>
+</html>

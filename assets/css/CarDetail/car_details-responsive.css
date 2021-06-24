@@ -1,0 +1,62 @@
+/*  */
+@media only screen and (max-width: 900px) {
+  /*  */
+  .car-product__offer {
+    position: relative;
+    width: 100%;
+  }
+  .car-product__desc {
+    display: none;
+  }
+  .car-product__offer {
+    padding: 3rem;
+    background: #16171a;
+  }
+  .car-product__offer-desc {
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+  }
+  .car-product__offer-desc1 {
+    display: block;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .car-product__info-details {
+    grid-template-columns: 1fr;
+    grid-template-rows: 14rem 40rem;
+  }
+  .car__specification-details {
+    grid-template-columns: 1fr;
+  }
+  .car__specification-images {
+    margin-top: 2rem;
+    order: -1;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .header__img-top img {
+    height: 60vh;
+  }
+  .car-product__heading {
+    font-size: 4rem;
+  }
+  .car-product__quote {
+    font-size: 2.5rem;
+  }
+  .car-product__info-details {
+    grid-template-rows: 26rem 30rem;
+  }
+  .car-product__demo-option {
+    bottom: -4rem;
+    right: 5%;
+  }
+  .car-product-demo__desc {
+    margin-top: 6rem;
+  }
+  .owl-item {
+    height: 23rem !important;
+  }
+  .car-product-recomment-item img {
+    height: 15rem;
+  }
+}

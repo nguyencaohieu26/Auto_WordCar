@@ -18,22 +18,13 @@
     <!-- link base stylesheet -->
     <link rel="stylesheet" href="assets/css/base.css" />
     <!-- link stylesheet -->
-    <link rel="stylesheet" href="assets/css/home_page.css" />
+    <link rel="stylesheet" href="assets/css/Home/home_page.css" />
     <!-- link responsive -->
-    <link rel="stylesheet" href="assets/css/home__responsive.css">
+    <link rel="stylesheet" href="assets/css/Home/home__responsive.css">
   </head>
   <body>
-    <!-- 
-      Thiếu 
-      - cart page
-      - menu moblie
-      - cars & motors list
-      - submenu c2
-      - detail cars & motors
-      - ourblog 
-      - cars__item-heading thêm giới hạn số chữ
-     -->
     <section class="home__page">
+      <!-- pre loading -->
       <div class="pre-loading">
         <div class="loader"></div>
       </div>
@@ -44,7 +35,7 @@
             <div class="header__nav">
               <!-- logo -->
               <div class="header__logo">
-                <a href="#" class="header__logo-link">
+                <a href="index.html" class="header__logo-link">
                   AUTO WORLD <span>WEBSITE</span>
                 </a>
               </div>
@@ -54,8 +45,8 @@
                   <ul class="header__nav-list">
                     <li class="header__nav-item">
                       <a
-                        href="#"
-                        class="header__nav-link header__nav-link--active"
+                        href="index.html"
+                        class="header__nav-link"
                         >HOME</a
                       >
                     </li>
@@ -64,41 +55,51 @@
                         <span>PRODUCTS</span>
                         <i class="nav-icon fas fa-caret-down"></i>
                       </a>
+                      <!-- nav child c1 -->
                       <ul class="nav-child__list">
                         <li class="nav__child-item">
-                          <a href="#" class="nav-child__link">Cars</a>
+                          <a href="car__list.html" class="nav-child__link">Cars</a>
                           <!-- submenu c2 -->
                           <ul class="submenu-c2__list">
                             <li class="submenu-c2__item">
-                              <a href="#" class="submenu-c2__link">Honda</a>
+                              <a href="car__detail.html" class="submenu-c2__link">Honda</a>
                             </li>
                             <li class="submenu-c2__item">
-                              <a href="#" class="submenu-c2__link">Toyota</a>
+                              <a href="car__detail.html" class="submenu-c2__link">Toyota</a>
                             </li>
                             <li class="submenu-c2__item">
-                              <a href="#" class="submenu-c2__link">Lexus</a>
+                              <a href="car__detail.html" class="submenu-c2__link">Lexus</a>
                             </li>
                             <li class="submenu-c2__item">
-                              <a href="#" class="submenu-c2__link">BMW</a>
+                              <a href="car__detail.html" class="submenu-c2__link">BMW</a>
                             </li>
                             <li class="submenu-c2__item">
-                              <a href="#" class="submenu-c2__link">Mazada</a>
+                              <a href="car__detail.html" class="submenu-c2__link">Mazada</a>
                             </li>
                             <li class="submenu-c2__item">
-                              <a href="#" class="submenu-c2__link">Audi</a>
+                              <a href="car__detail.html" class="submenu-c2__link">Audi</a>
                             </li>
                             <li class="submenu-c2__item">
-                              <a href="#" class="submenu-c2__link">Ford</a>
+                              <a href="car__detail.html" class="submenu-c2__link">Ford</a>
                             </li>
                             <li class="submenu-c2__item">
-                              <a href="#" class="submenu-c2__link"
+                              <a href="car__detail.html" class="submenu-c2__link"
                                 >Mercedes Benz</a
                               >
                             </li>
                           </ul>
                         </li>
                         <li class="nav__child-item">
-                          <a href="#" class="nav-child__link">Motors</a>
+                          <a href="motor__list.html" class="nav-child__link">Motors</a>
+                          <!-- submenu c2 -->
+                          <ul class="submenu-c2__list">
+                            <li class="submenu-c2__item">
+                              <a href="motor__detail.html" class="submenu-c2__link">BMW Motor</a>
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a href="motor__detail.html" class="submenu-c2__link">Harley Davidson Motor</a>
+                            </li>
+                          </ul>
                         </li>
                       </ul>
                     </li>
@@ -130,17 +131,30 @@
                       </ul>
                     </li>
                     <li class="header__nav-item">
-                      <a href="#" class="header__nav-link">CONTACT</a>
+                      <a href="#" class="header__nav-link">
+                        <span>SHOP</span>
+                        <i class="nav-icon fas fa-caret-down"></i>
+                      </a>
+                      <ul class="nav-child__list">
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">Finance </a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">Shop Cart</a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">Shop Checkout</a>
+                        </li>
+                      </ul>
                     </li>
+                    <li class="header__nav-item">
+                      <a href="#" class="header__nav-link">CONTACT</a>
+                    </li>            
                   </ul>
                 </nav>
               </div>
               <!-- menu icon -->
               <div class="header__menu-icon">
-                <div class="header__cart">
-                  <i class="fas fa-shopping-cart" title="Cart"></i>
-                  <span>0</span>
-                </div>
                 <div class="header__login" title="Login/ Register">
                   <i class="fa fa-user"></i>
                 </div>
@@ -153,6 +167,73 @@
           </div>
         </div>
         <!-- mobile nav -->
+        <nav class="header__mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a href="index.html" class="mobile-nav__link">HOME</a>
+            </li>
+            <li class="mobile-nav__item">
+              <button class="mobile-nav__link">
+                <span>PRODUCTS</span>
+                <i class="mobile-nav-icon fas fa-caret-down"></i>
+              </button>
+              <ul class="nav-mobile__child-list">
+                <li class="nav-mobile__child-item">
+                  <a href="car__list.html" class="nav-mobile__child-link">Cars</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="motor__list.html" class="nav-mobile__child-link">Motors</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-nav__item">
+              <button class="mobile-nav__link">
+                <span>ABOUT</span>
+                <i class="mobile-nav-icon fas fa-caret-down"></i>
+              </button>
+              <ul class="nav-mobile__child-list">
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">About Us</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Blog</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Team</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Testimonials</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">FAQ</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Terms</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-nav__item">
+              <button class="mobile-nav__link">
+                <span>SHOP</span>
+                <i class="mobile-nav-icon fas fa-caret-down"></i>
+              </button>
+              <ul class="nav-mobile__child-list">
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Finance</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Shop Cart</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Shop Checkout</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
       </header>
       <!-- login form -->
       <div class="auto-world__login">
@@ -166,7 +247,7 @@
               <a href="#" class="btn btn-login-chose active">Login</a><a href="#" class="btn btn-login-chose">Register</a>
             </div>
             <form action="#" class="login-form active" name-form ="Login" >
-              <input type="text" placeholder="Email Address" required>
+              <input type="text" placeholder="Email Address" required autofocus>
               <input type="text" placeholder="Password" required>
               <button href="#" class="btn btn-login btn-submit-login">Login</button>
               <p class="forgot-password">Forgot Password</p>
@@ -253,7 +334,7 @@
                         <i class="fa fa-cog"></i> Manual
                       </div>
                     </div>
-                    <a href="#" class="btn btn-view-car">
+                    <a href="car__detail.html" class="btn btn-view-car">
                       <i class="fas fa-plus"></i>
                       View Car
                     </a>
@@ -284,7 +365,7 @@
                         <i class="fa fa-cog"></i> Manual
                       </div>
                     </div>
-                    <a href="#" class="btn btn-view-car">
+                    <a href="car__detail.html" class="btn btn-view-car">
                       <i class="fas fa-plus"></i>
                       View Car
                     </a>
@@ -315,7 +396,7 @@
                         <i class="fa fa-cog"></i> Manual
                       </div>
                     </div>
-                    <a href="#" class="btn btn-view-car">
+                    <a href="car__detail.html" class="btn btn-view-car">
                       <i class="fas fa-plus"></i>
                       View Car
                     </a>
@@ -346,7 +427,7 @@
                         <i class="fa fa-cog"></i> Manual
                       </div>
                     </div>
-                    <a href="#" class="btn btn-view-car">
+                    <a href="car__detail.html" class="btn btn-view-car">
                       <i class="fas fa-plus"></i>
                       View Car
                     </a>
@@ -354,7 +435,7 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="btn btn-view-carmove btn-contact-us">VIEW CARS</a>
+            <a href="car__list.html" class="btn btn-view-carmove btn-contact-us">VIEW CARS</a>
           </div>
         </div>
         <!-- feature motor -->
@@ -392,7 +473,7 @@
                         <i class="fa fa-cog"></i> Manual
                       </div>
                     </div>
-                    <a href="#" class="btn btn-view-car">
+                    <a href="motor__detail.html" class="btn btn-view-car">
                       <i class="fas fa-plus"></i>
                       View Motor
                     </a>
@@ -423,7 +504,7 @@
                         <i class="fa fa-cog"></i> Manual
                       </div>
                     </div>
-                    <a href="#" class="btn btn-view-car">
+                    <a href="motor__detail.html" class="btn btn-view-car">
                       <i class="fas fa-plus"></i>
                       View Motor
                     </a>
@@ -454,7 +535,7 @@
                         <i class="fa fa-cog"></i> Manual
                       </div>
                     </div>
-                    <a href="#" class="btn btn-view-car">
+                    <a href="motor__detail.html" class="btn btn-view-car">
                       <i class="fas fa-plus"></i>
                       View Motor
                     </a>
@@ -485,7 +566,7 @@
                         <i class="fa fa-cog"></i> Manual
                       </div>
                     </div>
-                    <a href="#" class="btn btn-view-car">
+                    <a href="motor__detail.html" class="btn btn-view-car">
                       <i class="fas fa-plus"></i>
                       View Motor
                     </a>
@@ -493,7 +574,7 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="btn btn-view-carmove btn-contact-us">VIEW MOTORS</a>
+            <a href="motor__list.html" class="btn btn-view-carmove btn-contact-us">VIEW MOTORS</a>
           </div>
         </div>
         <!-- read about us -->
@@ -533,18 +614,16 @@
             <p class="home__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officia tempora sit id, assumenda consectetur eaque voluptates voluptatibus!</p>
             <div class="read-ourblog__details">
               <div class="read-ourblog__btn">
-                <a href="#" class="btn btn-ourblog-button">Blog 1</a>
+                <a href="#" class="btn btn-ourblog-button active">Blog 1</a>
                 <a href="#" class="btn btn-ourblog-button">Blog 2</a>
                 <a href="#" class="btn btn-ourblog-button">Blog 3</a>
                 <a href="#" class="btn btn-ourblog-button">Blog 4</a>
                 <a href="#" class="btn btn-read-more">READ MORE</a>
               </div>
               <div class="read-ourblog__content">
-                <img class="read-ourblog__img" src="assets/image/index/blog__img/blog-image-1.jpg" alt="blog__img" />
+                <img class="read-ourblog__img" src="assets/image/index/blog__img/blog__img1.jpg" alt="blog__img" />
                 <div class="ourblog__content-details">
-                  <h4>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  </h4>
+                  <h4>Lorem ipsum dolor sit amet, consectetur adipisicing1.</h4>
                   <div class="ourblog__content-info">
                     <div class="ourblog-info__item">
                       <i class="fa fa-user"></i>
@@ -559,14 +638,7 @@
                       <span>comments</span>
                     </div>
                   </div>
-                  <p>
-                    Integer dapibus, est vel dapibus mattis, sem mauris luctus
-                    leo, ac pulvinar quam tortor a velit. Praesent ultrices erat
-                    ante, in ultricies augue ultricies faucibus. Nam tellus
-                    nibh, ullamcorper at mattis non, rhoncus sed massa. Cras
-                    quis pulvinar eros. Orci varius natoque penatibus et magnis
-                    dis parturient montes, nascetur ridiculus mus.
-                  </p>
+                  <p>Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.</p>
                   <a href="#" class="btn btn-continue-reading btn-read-more"
                     >CONTINUE READING</a
                   >
@@ -734,13 +806,13 @@
                       </a>
                     </li>
                     <li class="footer__nav-item">
-                      <a href="#" class="footer__nav-link">
+                      <a href="mailto:@info@gmail.com" class="footer__nav-link">
                         <i class="fas fa-envelope-open-text"></i>
                         <span>info@gmail.com</span>
                       </a>
                     </li>
                     <li class="footer__nav-item">
-                      <a href="#" class="footer__nav-link">
+                      <a href="tel:090999999" class="footer__nav-link">
                         <i class="fas fa-phone"></i>
                         <span>+0999 9999 999</span>
                       </a>
@@ -757,13 +829,13 @@
                   <h3 class="footer__top-heading">Useful Links</h3>
                   <ul class="footer__nav-list">
                     <li class="footer__nav-item">
-                      <a href="#" class="footer__nav-link">
+                      <a href="index.html" class="footer__nav-link">
                         <i class="fas fa-chevron-right"></i>
                         <span>Home</span>
                       </a>
                     </li>
                     <li class="footer__nav-item">
-                      <a href="#" class="footer__nav-link">
+                      <a href="car__list.html" class="footer__nav-link">
                         <i class="fas fa-chevron-right"></i>
                         <span>Products</span>
                       </a>
@@ -784,6 +856,12 @@
                       <a href="#" class="footer__nav-link">
                         <i class="fas fa-chevron-right"></i>
                         <span>Blog</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Shop</span>
                       </a>
                     </li>
                     <li class="footer__nav-item">
@@ -845,20 +923,7 @@
         </div>
       </footer>
     </section>
-    <script
-			  src="https://code.jquery.com/jquery-3.6.0.min.js"
-			  ></script>
-        <script>
-        // smooth scroll 
-          $(document).ready(function(){
-            $('a').click(function(event){
-              $('html, body').animate({
-                  scrollTop: $( $.attr(this, 'href') ).offset().top
-              }, 1100);
-              event.preventDefault();
-          });
-          })
-          </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>    
     <script src="assets/js/home__page.js"></script>
   </body>
 </html>

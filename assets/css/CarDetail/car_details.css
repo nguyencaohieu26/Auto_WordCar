@@ -1,0 +1,318 @@
+/*  */
+.car-details__page {
+  overflow-x: hidden;
+}
+.header__img-top {
+  position: relative;
+  color: white;
+}
+.header__img-top img {
+  height: 90vh;
+}
+.car-product__desc {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 2rem;
+  width: 40%;
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+.car-product__offer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-top: 2rem;
+  width: 35rem;
+  min-height: 47.3rem;
+  background: rgba(27, 27, 27, 0.3);
+  padding: 0 3rem;
+  display: flex;
+  line-height: 1.6;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: end;
+  animation: animateRight 0.8s ease-out 1s;
+}
+.car-product__name {
+  font-size: 3rem;
+  font-weight: 800;
+  display: block;
+  text-transform: uppercase;
+}
+.car-product__price {
+  font-size: 2.4rem;
+  font-weight: 600;
+  display: block;
+  margin: 0.5rem 0 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.car-product__offer-desc {
+  margin-top: 7rem;
+  font-size: 1.3rem;
+}
+.car-product__offer-desc1 {
+  display: none;
+  font-size: 1.3rem;
+}
+.btn-offer {
+  display: block;
+  color: white;
+  padding: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+.btn-offer:hover {
+  color: white;
+  background: rgb(26, 90, 228);
+  border: rgb(26, 90, 228);
+}
+.btn-contact-now {
+  margin-bottom: 2rem;
+  border: 2px solid white;
+}
+.btn-configure {
+  color: black;
+  background: #fff;
+}
+/* main car details */
+.main__car-details {
+  padding: 10rem 1.5rem 0;
+}
+.car-product__info,
+.car-product__spefication,
+.car-product__desgin,
+.car-product__warranty,
+.car-product__trailer {
+  margin-bottom: 9rem;
+  color: #16171a;
+}
+.car-product__heading {
+  line-height: 5.5rem;
+  font-size: 7rem;
+  display: block;
+  font-weight: 800;
+}
+.car-product__quote {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.car-product__info-details {
+  margin-top: 4rem;
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: 1fr 0.75fr;
+  grid-template-rows: 30rem;
+}
+.car-product__info-left p {
+  font-size: 1.4rem;
+}
+/* car-product__spefication */
+.car_details__subheading {
+  position: relative;
+  text-align: center;
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 4rem;
+}
+.car_details__subheading::after,
+.car_details__subheading::before {
+  content: "";
+  position: absolute;
+  top: -3rem;
+  display: inline-block;
+  height: 3px;
+  width: 30rem;
+  background: #16171a;
+  /* transform: scaleX(0); */
+  transition: 0.3s all ease-in;
+}
+.car_details__subheading::after {
+  left: 10%;
+}
+.car_details__subheading::before {
+  right: 10%;
+}
+/* .car_details__subheading:hover::after,
+.car_details__subheading:hover::before {
+  transform: scaleX(1);
+} */
+.car-product__spefication p {
+  font-weight: 500;
+  line-height: 2;
+}
+ul.car__specification-list {
+  margin-top: 2rem;
+  line-height: 1.8;
+}
+ul.car__specification-list li i {
+  color: #16171a;
+  min-width: 2.5rem;
+  font-size: 1.3rem;
+}
+/*  */
+.car__specification-details {
+  margin: 0 auto;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+.car__specification-images {
+  position: relative;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+.car__specification-images i {
+  position: absolute;
+  top: 40%;
+  font-size: 3rem;
+  color: #16171a;
+  cursor: pointer;
+}
+.car__specification-images i:hover {
+  color: rgb(38, 136, 228);
+}
+.btnPrevSpe {
+  left: 0.6rem;
+}
+.btnNextSpe {
+  right: 0.6rem;
+}
+/* car-product__desgin */
+.car-product__demo {
+  position: relative;
+}
+.car-product__demo-option {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  right: 10%;
+}
+.car-product__demo-option img {
+  width: 4rem;
+  transition: 0.1s all ease-in;
+}
+.car-product__demo-option img:hover {
+  border: 2px solid rgb(61, 156, 16);
+  cursor: pointer;
+}
+.car-product-demo__desc {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  color: #16171a;
+  line-height: 1.8;
+}
+/* car-product__warranty */
+.car-product__warranty {
+  position: relative;
+  background: #f2f2f2;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 2;
+}
+.car-product__warranty::after {
+  content: "";
+  position: absolute;
+  top: -3.4rem;
+  left: 20%;
+  z-index: 2;
+  border-style: solid;
+  border-width: 2rem 3rem;
+  border-color: transparent transparent #f2f2f2 transparent;
+}
+.car-product__warranty h4 {
+  font-size: 3rem;
+}
+.btn-find-more-warranty {
+  position: relative;
+}
+.btn-find-more-warranty::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform-origin: center left;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in;
+}
+.btn-find-more-warranty:hover::before {
+  transform: scaleX(1);
+}
+/* video trailer */
+.car-product__trailer {
+  max-width: 100%;
+}
+.car-product__trailer h4 {
+  text-align: center;
+  font-family: monospace;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.car-product__trailer video {
+  display: block;
+  margin: 0 auto;
+  border-radius: 3px;
+  width: 80%;
+}
+/* test drive */
+.testdrive__button {
+  position: fixed;
+  bottom: 10%;
+  right: 3rem;
+  z-index: 10;
+}
+.btn-test-drive {
+  color: rgb(80, 80, 80);
+  display: block;
+  padding: 0.6rem;
+  text-align: center;
+  border: 2px solid var(--text-color);
+  border-radius: 3px;
+}
+.btn-test-drive:hover {
+  background: var(--text-color);
+  color: white;
+}
+/*  */
+.car-product-recomment {
+  padding-bottom: 3rem;
+}
+.car-product-recomment__heading {
+  font-size: 2.7rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  color: #16171a;
+  font-family: monospace;
+}
+.car-product-recomment-name:hover {
+  color: #16171a;
+}
+.owl-stage-outer {
+  padding-bottom: 2rem;
+}
+.car-product-recomment-item img {
+  height: 12rem;
+  box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.3);
+}
+.car-product-recomment-details {
+  padding: 1.5rem;
+}
+.owl-item {
+  height: 19rem !important;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+.car-product-recomment-name {
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 500;
+  color: rgb(38, 135, 214);
+}
+.car-product-recomment-desc {
+  font-size: 1.4rem;
+  color: #16171a;
+}

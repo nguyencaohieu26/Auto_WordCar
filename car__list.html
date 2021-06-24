@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Listing</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
+  "
+    />
+    <!-- gg font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <!-- link base stylesheet -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="assets/css/Home/home_page.css" />
+    <!-- link responsive for home page-->
+    <link rel="stylesheet" href="assets/css/Home/home__responsive.css" />
+    <!-- link stylesheet for car page -->
+    <link rel="stylesheet" href="assets/css/CarPage/car_page.css" />
+    <!-- link responsive for car page -->
+    <link rel="stylesheet" href="assets/css/CarPage/car_responsive.css" />
+  </head>
+  <body>
+    <section class="car-list__page">
+      <div class="pre-loading">
+        <div class="loader"></div>
+      </div>
+      <!-- header -->
+      <header class="header">
+        <div class="header__scroll">
+          <div class="row-index">
+            <div class="header__nav">
+              <!-- logo -->
+              <div class="header__logo">
+                <a href="index.html" class="header__logo-link">
+                  AUTO WORLD <span>WEBSITE</span>
+                </a>
+              </div>
+              <!-- nav -->
+              <div class="menu__nav">
+                <nav class="header__nav-top">
+                  <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                      <a href="index.html" class="header__nav-link">HOME</a>
+                    </li>
+                    <li class="header__nav-item">
+                      <a href="#" class="header__nav-link">
+                        <span>PRODUCTS</span>
+                        <i class="nav-icon fas fa-caret-down"></i>
+                      </a>
+                      <!-- nav child c1 -->
+                      <ul class="nav-child__list">
+                        <li class="nav__child-item">
+                          <a href="car__list.html" class="nav-child__link"
+                            >Cars</a
+                          >
+                          <!-- submenu c2 -->
+                          <ul class="submenu-c2__list">
+                            <li class="submenu-c2__item">
+                              <a
+                                href="car__detail.html"
+                                class="submenu-c2__link"
+                                >Honda</a
+                              >
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a
+                                href="car__detail.html"
+                                class="submenu-c2__link"
+                                >Toyota</a
+                              >
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a
+                                href="car__detail.html"
+                                class="submenu-c2__link"
+                                >Lexus</a
+                              >
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a
+                                href="car__detail.html"
+                                class="submenu-c2__link"
+                                >BMW</a
+                              >
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a
+                                href="car__detail.html"
+                                class="submenu-c2__link"
+                                >Mazada</a
+                              >
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a
+                                href="car__detail.html"
+                                class="submenu-c2__link"
+                                >Audi</a
+                              >
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a
+                                href="car__detail.html"
+                                class="submenu-c2__link"
+                                >Ford</a
+                              >
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a
+                                href="car__detail.html"
+                                class="submenu-c2__link"
+                                >Mercedes Benz</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="motor__list.html" class="nav-child__link"
+                            >Motors</a
+                          >
+                          <!-- submenu c2 -->
+                          <ul class="submenu-c2__list">
+                            <li class="submenu-c2__item">
+                              <a
+                                href="motor__detail.html"
+                                class="submenu-c2__link"
+                                >BMW Motor</a
+                              >
+                            </li>
+                            <li class="submenu-c2__item">
+                              <a
+                                href="motor__detail.html"
+                                class="submenu-c2__link"
+                                >Harley Davidson Motor</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="header__nav-item">
+                      <a href="#" class="header__nav-link">
+                        <span>ABOUT</span>
+                        <i class="nav-icon fas fa-caret-down"></i>
+                      </a>
+                      <!-- submenu c1 -->
+                      <ul class="nav-child__list">
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">ABOUT US</a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">BLOG</a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">TEAM</a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">TESTIMONIALS</a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">FAQ</a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">TERMS</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="header__nav-item">
+                      <a href="#" class="header__nav-link">
+                        <span>SHOP</span>
+                        <i class="nav-icon fas fa-caret-down"></i>
+                      </a>
+                      <ul class="nav-child__list">
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">Finance </a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">Shop Cart</a>
+                        </li>
+                        <li class="nav__child-item">
+                          <a href="#" class="nav-child__link">Shop Checkout</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="header__nav-item">
+                      <a href="#" class="header__nav-link">CONTACT</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- menu icon -->
+              <div class="header__menu-icon">
+                <div class="header__login" title="Login/ Register">
+                  <i class="fa fa-user"></i>
+                </div>
+                <!-- menu toggle -->
+                <div class="header__burger">
+                  <i class="fa fa-bars"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- mobile nav -->
+        <nav class="header__mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a href="index.html" class="mobile-nav__link">HOME</a>
+            </li>
+            <li class="mobile-nav__item">
+              <button class="mobile-nav__link">
+                <span>PRODUCTS</span>
+                <i class="mobile-nav-icon fas fa-caret-down"></i>
+              </button>
+              <ul class="nav-mobile__child-list">
+                <li class="nav-mobile__child-item">
+                  <a href="car__list.html" class="nav-mobile__child-link"
+                    >Cars</a
+                  >
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="motor__list.html" class="nav-mobile__child-link"
+                    >Motors</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-nav__item">
+              <button class="mobile-nav__link">
+                <span>ABOUT</span>
+                <i class="mobile-nav-icon fas fa-caret-down"></i>
+              </button>
+              <ul class="nav-mobile__child-list">
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">About Us</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Blog</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Team</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Testimonials</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">FAQ</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Terms</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-nav__item">
+              <button class="mobile-nav__link">
+                <span>SHOP</span>
+                <i class="mobile-nav-icon fas fa-caret-down"></i>
+              </button>
+              <ul class="nav-mobile__child-list">
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Finance</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Shop Cart</a>
+                </li>
+                <li class="nav-mobile__child-item">
+                  <a href="#" class="nav-mobile__child-link">Shop Checkout</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- login form -->
+      <div class="auto-world__login">
+        <div class="close__loginform">
+          <i class="fa fa-times"></i>
+        </div>
+        <div class="auto-world__login-detail">
+          <div class="login-detail__left">
+            <h4>Sign into your account</h4>
+            <div class="login__chose-btns">
+              <a href="#" class="btn btn-login-chose active">Login</a
+              ><a href="#" class="btn btn-login-chose">Register</a>
+            </div>
+            <form action="#" class="login-form active" name-form="Login">
+              <input type="text" placeholder="Email Address" required />
+              <input type="text" placeholder="Password" required />
+              <button href="#" class="btn btn-login btn-submit-login">
+                Login
+              </button>
+              <p class="forgot-password">Forgot Password</p>
+            </form>
+            <form action="#" class="register-form" name-form="Register">
+              <input type="text" placeholder="Full Name" required />
+              <input type="text" placeholder="Email Address" required />
+              <input type="text" placeholder="Password" required />
+              <button href="#" class="btn btn-login btn-submit-register">
+                Register
+              </button>
+            </form>
+          </div>
+          <div class="login-detail__right">
+            <div class="login-details__img">
+              <img
+                src="assets/image/index/pexels-sourav-mishra-1149831.jpg"
+                alt="login__img"
+              />
+            </div>
+            <div class="login-details__img-content">
+              <h5>Auto World</h5>
+              <p>WELCOME YOU</p>
+              <div class="login-socials__list">
+                <a href="#" class="login-social__link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="login-social__link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="login-social__link">
+                  <i class="fab fa-google"></i>
+                </a>
+                <a href="#" class="login-social__link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- image top -->
+      <section class="header__image" id="top">
+        <div class="header__image-content">CAR LIST</div>
+        <p class="header__image-desc">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex,
+          voluptates.
+        </p>
+      </section>
+      <!-- main -->
+      <main class="main__car-list">
+        <div class="row-index">
+          <div class="main__car-list-detail">
+            <div class="car-list__details-left">
+              <div class="nav-car__list">
+                <p>Showing 1-7 of 69 Listings</p>
+                <div class="nav-car__list-right">
+                  <div class="car-select__option">
+                    <select
+                      name=""
+                      id="car-select__filter"
+                      class="form-control"
+                    >
+                      <option value="">Default Order</option>
+                      <option value="Price Hight to Low">
+                        Price Hight to Low
+                      </option>
+                      <option value="Price Hight to Low">
+                        Price Low to Height
+                      </option>
+                      <option value="Price Hight to Low">
+                        Newest Properties
+                      </option>
+                      <option value="Price Hight to Low">
+                        Oldest Properties
+                      </option>
+                    </select>
+                  </div>
+                  <div class="car-select__grid">
+                    <a href="#" class="select__grid-type" data-grid="grid-1">
+                      <i class="fas fa-border-all"></i>
+                    </a>
+                    <a href="#" class="select__grid-type" data-grid="grid-2">
+                      <i class="fas fa-list"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="categories-car__list">
+                <div class="categories-car__item">
+                  <div class="car-item__thumbnail">
+                    <div class="car-item__tag2">
+                      <div class="car-item__chose">
+                        <a
+                          href="#"
+                          class="car-item__chose-link btn-view__gallery"
+                        >
+                          <i class="far fa-eye"></i>
+                        </a>
+                        <a href="#" class="car-item__chose-link">
+                          <i class="far fa-heart"></i>
+                        </a>
+                        <a href="#" class="car-item__chose-link">
+                          <i class="fas fa-balance-scale"></i>
+                        </a>
+                        <a
+                          href="#"
+                          class="car-item__chose-link btn-expand__img"
+                        >
+                          <i class="fas fa-expand-alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <img
+                      src="assets/image/index/Car__list/BMW/BMW-X4_M40d-2019-1280-03.jpg"
+                      alt=""
+                      class="imagecar"
+                    />
+                    <div class="car-item__tag1">
+                      <span class="car-thumbnail__tag">FOR SALE</span>
+                      <div class="car-item__tag-price">
+                        <span class="car-thumbnail__price--strike"
+                          ><strike>$950.00</strike></span
+                        >
+                        <span class="car-thumbnail__price">$1050.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="car-item__content">
+                    <h4>
+                      <a class="car-item__name" href="car__detail.html">
+                        BMW-X4_M40D
+                      </a>
+                    </h4>
+                    <p class="car-item__desc">
+                      <span>NEW CAR /</span>
+                      <span>AUTOMATIC /</span>
+                      <span>SPORTS</span>
+                    </p>
+                    <div class="car-item__features">
+                      <div class="car-feature__item">
+                        <i class="fas fa-road"></i>
+                        <span>4,000 km</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-gas-pump"></i>
+                        <span>Petrol</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-car-side"></i>
+                        <span>Manual</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-car"></i>
+                        <span>Sport</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2019</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fa fa-cog"></i>
+                        <span>Blue</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="categories-car__item">
+                  <div class="car-item__thumbnail">
+                    <div class="car-item__tag2">
+                      <div class="car-item__chose">
+                        <a
+                          href="#"
+                          class="car-item__chose-link btn-view__gallery"
+                        >
+                          <i class="far fa-eye"></i>
+                        </a>
+                        <a href="#" class="car-item__chose-link">
+                          <i class="far fa-heart"></i>
+                        </a>
+                        <a href="#" class="car-item__chose-link">
+                          <i class="fas fa-balance-scale"></i>
+                        </a>
+                        <a
+                          href="#"
+                          class="car-item__chose-link btn-expand__img"
+                        >
+                          <i class="fas fa-expand-alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <img
+                      src="assets/image/index/Car__list/BMW/bmw-7series-sedan.jpg"
+                      alt=""
+                      class="imagecar"
+                    />
+                    <div class="car-item__tag1">
+                      <span class="car-thumbnail__tag">FOR SALE</span>
+                      <div class="car-item__tag-price">
+                        <span class="car-thumbnail__price--strike"
+                          ><strike>$950.00</strike></span
+                        >
+                        <span class="car-thumbnail__price">$1050.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="car-item__content">
+                    <h4>
+                      <a class="car-item__name" href="car__detail.html"
+                        >BMW-7Series
+                      </a>
+                    </h4>
+                    <p class="car-item__desc">
+                      <span>NEW CAR /</span>
+                      <span>AUTOMATIC /</span>
+                      <span>SPORTS</span>
+                    </p>
+                    <div class="car-item__features">
+                      <div class="car-feature__item">
+                        <i class="fas fa-road"></i>
+                        <span>4,000 km</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-gas-pump"></i>
+                        <span>Petrol</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-car-side"></i>
+                        <span>Manual</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-car"></i>
+                        <span>Sport</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2019</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fa fa-cog"></i>
+                        <span>Blue</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="categories-car__item">
+                  <div class="car-item__thumbnail">
+                    <div class="car-item__tag2">
+                      <div class="car-item__chose">
+                        <a
+                          href="#"
+                          class="car-item__chose-link btn-view__gallery"
+                        >
+                          <i class="far fa-eye"></i>
+                        </a>
+                        <a href="#" class="car-item__chose-link">
+                          <i class="far fa-heart"></i>
+                        </a>
+                        <a href="#" class="car-item__chose-link">
+                          <i class="fas fa-balance-scale"></i>
+                        </a>
+                        <a
+                          href="#"
+                          class="car-item__chose-link btn-expand__img"
+                        >
+                          <i class="fas fa-expand-alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <img
+                      src="assets/image/index/Car__list/Lexus/Lexux_NX300hAWD.jpg "
+                      alt=""
+                      class="imagecar"
+                    />
+                    <div class="car-item__tag1">
+                      <span class="car-thumbnail__tag--marked">FEATURE</span>
+                      <div class="car-item__tag-price">
+                        <span class="car-thumbnail__price--strike"
+                          ><strike>$950.00</strike></span
+                        >
+                        <span class="car-thumbnail__price">$1050.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="car-item__content">
+                    <h4>
+                      <a class="car-item__name" href="car__detail.html">
+                        Lexux_NX300hAWD</a
+                      >
+                    </h4>
+                    <p class="car-item__desc">
+                      <span>NEW CAR /</span>
+                      <span>AUTOMATIC /</span>
+                      <span>SPORTS</span>
+                    </p>
+                    <div class="car-item__features">
+                      <div class="car-feature__item">
+                        <i class="fas fa-road"></i>
+                        <span>4,000 km</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-gas-pump"></i>
+                        <span>Petrol</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-car-side"></i>
+                        <span>Manual</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-car"></i>
+                        <span>Sport</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2019</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fa fa-cog"></i>
+                        <span>Blue</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="categories-car__item">
+                  <div class="car-item__thumbnail">
+                    <div class="car-item__tag2">
+                      <div class="car-item__chose">
+                        <a
+                          href="#"
+                          class="car-item__chose-link btn-view__gallery"
+                        >
+                          <i class="far fa-eye"></i>
+                        </a>
+                        <a href="#" class="car-item__chose-link">
+                          <i class="far fa-heart"></i>
+                        </a>
+                        <a href="#" class="car-item__chose-link">
+                          <i class="fas fa-balance-scale"></i>
+                        </a>
+                        <a
+                          href="#"
+                          class="car-item__chose-link btn-expand__img"
+                        >
+                          <i class="fas fa-expand-alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <img
+                      src="assets/image/index/Car__list/Mec/mercedes-benz-e-class-facelift-2021.jpg"
+                      alt=""
+                      class="imagecar"
+                    />
+                    <div class="car-item__tag1">
+                      <span class="car-thumbnail__tag">FOR SALE</span>
+                      <div class="car-item__tag-price">
+                        <span class="car-thumbnail__price--strike"
+                          ><strike>$950.00</strike></span
+                        >
+                        <span class="car-thumbnail__price">$1050.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="car-item__content">
+                    <h4>
+                      <a class="car-item__name" href="car__detail.html">
+                        Mercedes-Benz Eclass
+                      </a>
+                    </h4>
+                    <p class="car-item__desc">
+                      <span>NEW CAR /</span>
+                      <span>AUTOMATIC /</span>
+                      <span>SPORTS</span>
+                    </p>
+                    <div class="car-item__features">
+                      <div class="car-feature__item">
+                        <i class="fas fa-road"></i>
+                        <span>4,000 km</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-gas-pump"></i>
+                        <span>Petrol</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-car-side"></i>
+                        <span>Manual</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-car"></i>
+                        <span>Sport</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2019</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fa fa-cog"></i>
+                        <span>Blue</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="categories-car__item">
+                  <div class="car-item__thumbnail">
+                    <div class="car-item__tag2">
+                      <div class="car-item__chose">
+                        <a
+                          href="#"
+                          class="car-item__chose-link btn-view__gallery"
+                        >
+                          <i class="far fa-eye"></i>
+                        </a>
+                        <a href="#" class="car-item__chose-link">
+                          <i class="far fa-heart"></i>
+                        </a>
+                        <a href="#" class="car-item__chose-link">
+                          <i class="fas fa-balance-scale"></i>
+                        </a>
+                        <a
+                          href="#"
+                          class="car-item__chose-link btn-expand__img"
+                        >
+                          <i class="fas fa-expand-alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <img
+                      src="assets/image/index/Car__list/Mec/dima-black-IP-xOCpJVwA-unsplash.jpg"
+                      alt=""
+                      class="imagecar"
+                    />
+                    <div class="car-item__tag1">
+                      <span class="car-thumbnail__tag">FOR SALE</span>
+                      <div class="car-item__tag-price">
+                        <span class="car-thumbnail__price--strike"
+                          ><strike>$950.00</strike></span
+                        >
+                        <span class="car-thumbnail__price">$1050.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="car-item__content">
+                    <h4>
+                      <a class="car-item__name" href="car__detail.html">
+                        Mercedes-Benz C-class
+                      </a>
+                    </h4>
+                    <p class="car-item__desc">
+                      <span>NEW CAR /</span>
+                      <span>AUTOMATIC /</span>
+                      <span>SPORTS</span>
+                    </p>
+                    <div class="car-item__features">
+                      <div class="car-feature__item">
+                        <i class="fas fa-road"></i>
+                        <span>4,000 km</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-gas-pump"></i>
+                        <span>Petrol</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-car-side"></i>
+                        <span>Manual</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-car"></i>
+                        <span>Sport</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2019</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fa fa-cog"></i>
+                        <span>Blue</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="categories-car__item">
+                  <div class="car-item__thumbnail">
+                    <div class="car-item__tag2">
+                      <div class="car-item__chose">
+                        <a
+                          href="#"
+                          class="car-item__chose-link btn-view__gallery"
+                        >
+                          <i class="far fa-eye"></i>
+                        </a>
+                        <a href="#" class="car-item__chose-link">
+                          <i class="far fa-heart"></i>
+                        </a>
+                        <a href="#" class="car-item__chose-link">
+                          <i class="fas fa-balance-scale"></i>
+                        </a>
+                        <a
+                          href="#"
+                          class="car-item__chose-link btn-expand__img"
+                        >
+                          <i class="fas fa-expand-alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <img
+                      src="assets/image/index/Car__list/Audi/The Audi A3 Sportback.jpg"
+                      alt=""
+                      class="imagecar"
+                    />
+                    <div class="car-item__tag1">
+                      <span class="car-thumbnail__tag--marked">FEATURE</span>
+                      <div class="car-item__tag-price">
+                        <span class="car-thumbnail__price--strike"
+                          ><strike>$950.00</strike></span
+                        >
+                        <span class="car-thumbnail__price">$1050.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="car-item__content">
+                    <h4>
+                      <a class="car-item__name" href="car__detail.html">
+                        Audi A3 Sportback
+                      </a>
+                    </h4>
+                    <p class="car-item__desc">
+                      <span>NEW CAR /</span>
+                      <span>AUTOMATIC /</span>
+                      <span>SPORTS</span>
+                    </p>
+                    <div class="car-item__features">
+                      <div class="car-feature__item">
+                        <i class="fas fa-road"></i>
+                        <span>4,000 km</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-gas-pump"></i>
+                        <span>Petrol</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-car-side"></i>
+                        <span>Manual</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-car"></i>
+                        <span>Sport</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2019</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fa fa-cog"></i>
+                        <span>Blue</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="categories-car__item">
+                  <div class="car-item__thumbnail">
+                    <div class="car-item__tag2">
+                      <div class="car-item__chose">
+                        <a
+                          href="#"
+                          class="car-item__chose-link btn-view__gallery"
+                        >
+                          <i class="far fa-eye"></i>
+                        </a>
+                        <a href="#" class="car-item__chose-link">
+                          <i class="far fa-heart"></i>
+                        </a>
+                        <a href="#" class="car-item__chose-link">
+                          <i class="fas fa-balance-scale"></i>
+                        </a>
+                        <a
+                          href="#"
+                          class="car-item__chose-link btn-expand__img"
+                        >
+                          <i class="fas fa-expand-alt"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <img
+                      src="assets/image/index/Car__list/Mec/martin-katler-y3neNkE6efI-unsplash.jpg"
+                      alt=""
+                      class="imagecar"
+                    />
+                    <div class="car-item__tag1">
+                      <span class="car-thumbnail__tag--marked">FEATURE</span>
+                      <div class="car-item__tag-price">
+                        <span class="car-thumbnail__price--strike"
+                          ><strike>$950.00</strike></span
+                        >
+                        <span class="car-thumbnail__price">$1050.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="car-item__content">
+                    <h4>
+                      <a class="car-item__name" href="car__detail.html">
+                        Mercedes-Benz S-Class
+                      </a>
+                    </h4>
+                    <p class="car-item__desc">
+                      <span>NEW CAR /</span>
+                      <span>AUTOMATIC /</span>
+                      <span>SPORTS</span>
+                    </p>
+                    <div class="car-item__features">
+                      <div class="car-feature__item">
+                        <i class="fas fa-road"></i>
+                        <span>4,000 km</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-gas-pump"></i>
+                        <span>Petrol</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-car-side"></i>
+                        <span>Manual</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fas fa-car"></i>
+                        <span>Sport</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>2019</span>
+                      </div>
+                      <div class="car-feature__item">
+                        <i class="fa fa-cog"></i>
+                        <span>Blue</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- move page -->
+              <div class="car-movetopage">
+                <div class="car-moveto__list">
+                  <a href="#" class="carmove__link"
+                    ><i class="fas fa-angle-left"></i></a
+                  ><a href="#" class="carmove__link carmove__link--active">1</a
+                  ><a href="#" class="carmove__link">2</a
+                  ><a href="#" class="carmove__link">3</a
+                  ><a href="#" class="carmove__link"
+                    ><i class="fas fa-angle-right"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- gallery image -->
+              <div class="gallery-car">
+                <div class="gallery-car__list">
+                  <img src="" alt="" class="gallery-car__img" />
+                </div>
+                <div class="close__gallery-car">
+                  <i class="fa fa-times"></i>
+                </div>
+                <i class="fas fa-arrow-alt-circle-left btnPrev"></i>
+                <i class="fas fa-arrow-circle-right btnNext"></i>
+              </div>
+            </div>
+            <div class="car-list__details-right">
+              <!-- search cars -->
+              <div class="search-cars">
+                <h4 class="details-right__heading">Search Cars</h4>
+                <div class="search-cars__details">
+                  <div class="search-cars__select">
+                    <select name="" id="brand_car" class="form-control">
+                      <option value="">Brand</option>
+                      <option value="">Lexus</option>
+                      <option value="">Audi</option>
+                      <option value="">BMW</option>
+                      <option value="">Mercedes Benz</option>
+                      <option value="">Honda</option>
+                      <option value="">Toyota</option>
+                      <option value="">Mazada</option>
+                      <option value="">Ford</option>
+                    </select>
+                    <select name="" id="location_car" class="form-control">
+                      <option value="">Location</option>
+                      <option value="">United States</option>
+                      <option value="">United Kingdom</option>
+                      <option value="">France</option>
+                      <option value="">Autralia</option>
+                      <option value="">Canada</option>
+                      <option value="">German</option>
+                    </select>
+                    <select name="" id="year_car" class="form-control">
+                      <option value="">Year</option>
+                      <option value="">2016</option>
+                      <option value="">2017</option>
+                      <option value="">2018</option>
+                      <option value="">2019</option>
+                      <option value="">2020</option>
+                    </select>
+                    <select name="" id="option_car" class="form-control">
+                      <option value="">Category</option>
+                      <option value="">Sport Cars</option>
+                      <option value="">Truck</option>
+                      <option value="">Minivan</option>
+                      <option value="">Wagon</option>
+                    </select>
+                    <select name="" id="transmission_car" class="form-control">
+                      <option value="">Transmission</option>
+                      <option value="">Automatic</option>
+                      <option value="">Manual</option>
+                      <option value="">Tiptronic</option>
+                    </select>
+                  </div>
+                  <div class="search-cars__footer">
+                    <!-- search car slider -->
+                    <div class="search-cars__price">
+                      <h4><label for="amount">Price:</label></h4>
+                      <input type="text" id="amount" readonly />
+                      <div id="slider-range__price"></div>
+                    </div>
+                    <!-- search car features -->
+                    <div class="search-cars__otherfeatures">
+                      <button class="open__searchcar">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>Other Features</span>
+                      </button>
+                      <div class="otherfeatures-car">
+                        <h4 class="details-right__heading">Brand</h4>
+                        <div class="otherfeatures-car__list">
+                          <div class="otherfeatures-car__item">
+                            <input
+                              type="checkbox"
+                              id="audi"
+                              class="form-checkbox"
+                            />
+                            <label for="audi">Audi</label>
+                          </div>
+                          <div class="otherfeatures-car__item">
+                            <input
+                              type="checkbox"
+                              id="bmw"
+                              class="form-checkbox"
+                            />
+                            <label for="bmw">BMW</label>
+                          </div>
+                          <div class="otherfeatures-car__item">
+                            <input
+                              type="checkbox"
+                              id="mer"
+                              class="form-checkbox"
+                            />
+                            <label for="mer">Mercedes Benz</label>
+                          </div>
+                          <div class="otherfeatures-car__item">
+                            <input
+                              type="checkbox"
+                              id="honda"
+                              class="form-checkbox"
+                            />
+                            <label for="honda">Honda</label>
+                          </div>
+                          <div class="otherfeatures-car__item">
+                            <input
+                              type="checkbox"
+                              id="toyota"
+                              class="form-checkbox"
+                            />
+                            <label for="toyota">Toyota</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="btn btn-search-cars">SEARCH</a>
+                  </div>
+                </div>
+              </div>
+              <!-- recent posts -->
+              <div class="recent-posts">
+                <h4 class="details-right__heading">Recent Posts</h4>
+                <div class="recent-posts__details">
+                  <div class="recent-posts__list">
+                    <a class="recent-post__item-link">
+                      <img
+                        src="assets/image/index/Car__list/Audi/Audi TTS Roadster.jpg"
+                        alt="Audi TTS Roadster"
+                      />
+                      <div class="post__item-details">
+                        <h4 class="post__item-title">Car name2</h4>
+                        <p class="post__item-desc">
+                          <span>$345,00</span>
+                          <span>
+                            <i class="far fa-calendar-alt"></i>
+                            Jan 12, 2020
+                          </span>
+                        </p>
+                      </div>
+                    </a>
+                    <a class="recent-post__item-link">
+                      <img
+                        src="assets/image/index/Car__list/BMW/BMW-X4_M40d-2019-1280-03.jpg"
+                        alt="bmw"
+                      />
+                      <div class="post__item-details">
+                        <h4 class="post__item-title">Car name1</h4>
+                        <p class="post__item-desc">
+                          <span>$745,00</span>
+                          <span>
+                            <i class="far fa-calendar-alt"></i>
+                            Feb 26, 2020
+                          </span>
+                        </p>
+                      </div>
+                    </a>
+                    <a class="recent-post__item-link">
+                      <img
+                        src="assets/image/index/Car__list/Mec/william-chiesurin-rQa4wGvdziQ-unsplash.jpg"
+                        alt="Mercedes"
+                      />
+                      <div class="post__item-details">
+                        <h4 class="post__item-title">Car name3</h4>
+                        <p class="post__item-desc">
+                          <span>$745,00</span>
+                          <span>
+                            <i class="far fa-calendar-alt"></i>
+                            Feb 14, 2020
+                          </span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- category -->
+              <div class="category__right">
+                <h4 class="details-right__heading">Category</h4>
+                <div class="category__right-details">
+                  <ul class="category__details-list">
+                    <li class="category__detail-item">
+                      <a href="#" class="category__details-link">
+                        Sport Car(45)
+                      </a>
+                    </li>
+                    <li class="category__detail-item">
+                      <a href="#" class="category__details-link">
+                        Pickup Truck(21)
+                      </a>
+                    </li>
+                    <li class="category__detail-item">
+                      <a href="#" class="category__details-link">
+                        Luxury (10)</a
+                      >
+                    </li>
+                    <li class="category__detail-item">
+                      <a href="#" class="category__details-link">
+                        Automakers (22)</a
+                      >
+                    </li>
+                    <li class="category__detail-item">
+                      <a href="#" class="category__details-link"> Wagon (9)</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- get a question-->
+              <div class="get-question">
+                <h4 class="details-right__heading">Get a Question?</h4>
+                <div class="get-question__details">
+                  <ul class="get-question__info">
+                    <li class="question__info-item">
+                      <a href="#" class="question__info-link">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span> 20/F Green Road, Dhanmondi </span>
+                      </a>
+                    </li>
+                    <li class="question__info-item">
+                      <a
+                        href="mailto:info@gmail.com"
+                        class="question__info-link"
+                      >
+                        <i class="far fa-envelope"></i>
+                        <span>info@gmail.com</span>
+                      </a>
+                    </li>
+                    <li class="question__info-item">
+                      <a href="tel:090999999" class="question__info-link">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>+0477 85x6 552</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="get-question__socials">
+                    <li class="question__social-item">
+                      <a href="#" class="question__social-link">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="question__social-item">
+                      <a href="#" class="question__social-link">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="question__social-item">
+                      <a href="#" class="question__social-link">
+                        <i class="fab fa-google-plus-g"></i>
+                      </a>
+                    </li>
+                    <li class="question__social-item">
+                      <a href="#" class="question__social-link">
+                        <i class="fas fa-rss"></i>
+                      </a>
+                    </li>
+                    <li class="question__social-item">
+                      <a href="#" class="question__social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="car-item__showfull">
+            <div class="car-item__showfull-inner">
+              <div class="close__showfullImg">
+                <i class="fa fa-times"></i>
+              </div>
+              <img src="" alt="" class="ImageFullsize" />
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="move-to-top">
+        <a href="#top" class="move-to-top-btn">
+          <i class="fas fa-chevron-up"></i>
+        </a>
+      </div>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer__details">
+          <!-- footer top -->
+          <div class="footer__top">
+            <div class="row-index">
+              <div class="footer__top-list">
+                <div class="footer__top-item">
+                  <h3 class="footer__logo">
+                    <a href="#" class="footer__logo-link">AUTO WORLD</a>
+                  </h3>
+                  <div class="footer__top-content">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Rerum, vel magni, ad quidem sapiente soluta quam odit
+                      aspernatur nostrum fugit a. Architecto, tempora repellat
+                      vitae excepturi sapiente sequi consequuntur dolor.
+                    </p>
+                  </div>
+                </div>
+                <div class="footer__top-item">
+                  <h3 class="footer__top-heading">Contact Info</h3>
+                  <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-map-pin"></i>
+                        <span>20/F Green Road, Dhanmondi, Dhaka</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="mailto:info@gmail.com" class="footer__nav-link">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <span>info@gmail.com</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="tel:099999999" class="footer__nav-link">
+                        <i class="fas fa-phone"></i>
+                        <span>+0999 9999 999</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-fax"></i>
+                        <span>+0477 85X6 552</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__top-item">
+                  <h3 class="footer__top-heading">Useful Links</h3>
+                  <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                      <a href="index.html" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Home</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Products</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>About Us</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Testimonials</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Blog</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Shop</span>
+                      </a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link">
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Contact</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__top-item">
+                  <h3 class="footer__top-heading">Subscribe</h3>
+                  <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit.
+                  </p>
+                  <form action="#" class="footer-contact">
+                    <input type="text" placeholder="Enter Address" />
+                    <a href="" class="btn btn-footer-contact">
+                      <i class="fab fa-telegram-plane"></i>
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- footer bottom -->
+          <div class="footer__bottom">
+            <div class="row-index">
+              <div class="footer__bottom-details">
+                <p class="copy-right">&copy; Made with love</p>
+                <div class="footer__social-icon">
+                  <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                      <a href="#" class="footer__social-link social--bg-blue1">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="footer__social-item">
+                      <a href="#" class="footer__social-link social--bg-blue3">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="footer__social-item">
+                      <a href="#" class="footer__social-link social--bg-red">
+                        <i class="fab fa-google-plus-g"></i>
+                      </a>
+                    </li>
+                    <li class="footer__social-item">
+                      <a href="#" class="footer__social-link social--bg-blue2">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/home__page.js"></script>
+    <script src="assets/js/car_page.js"></script>
+  </body>
+</html>

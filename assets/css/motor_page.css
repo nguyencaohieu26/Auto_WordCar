@@ -1,0 +1,72 @@
+/* main motor left */
+.car-thumbnail__price--strike,
+.car-thumbnail__price {
+  text-shadow: 0 3px 8px rgb(0, 0, 0, 0.5);
+}
+/* main content */
+.main__car-list {
+  padding-top: 5rem;
+}
+.main__car-list-detail {
+  grid-template-columns: 0.5fr 1fr;
+}
+.car-list__details-right {
+  order: -1;
+}
+/* header image slider */
+.image__slider-top {
+  position: relative;
+}
+.header__img-slider {
+  height: 85vh;
+  z-index: 2;
+}
+.header__img-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 85vh;
+  width: 100%;
+  z-index: 4;
+  background: rgba(39, 39, 65, 0.6);
+}
+.header__img-slider .item {
+  height: 100%;
+}
+.header__img-slider .item img {
+  height: 85vh !important;
+}
+.content-slider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  text-align: center;
+  width: 80%;
+  color: white;
+}
+.content-slider h4 {
+  font-size: 3.4rem;
+  letter-spacing: 2px;
+}
+.content-slider p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+/* setting for owl carousel slider */
+.owl-next,
+.owl-prev {
+  position: absolute;
+  top: 40%;
+  font-size: 5rem !important;
+  color: #fff !important;
+  z-index: 5;
+}
+.owl-next {
+  right: 2rem;
+}
+.owl-prev {
+  left: 2rem;
+}

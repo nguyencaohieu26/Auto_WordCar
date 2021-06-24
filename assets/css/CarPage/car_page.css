@@ -1,0 +1,576 @@
+/* header */
+.header__image {
+  background: linear-gradient(
+      to bottom,
+      rgba(68, 72, 83, 0.6),
+      rgba(13, 21, 43, 0.7)
+    ),
+    url(/assets/image/index/send___mess.jpg);
+  min-height: 60vh;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.header__image-content {
+  font-size: 3.2rem;
+  font-weight: 800;
+}
+/* ----------------------------------------------- */
+/* main content */
+.main__car-list {
+  background-color: #f9f9f9;
+  padding: 8rem 1.5rem 4rem;
+}
+.main__car-list-detail {
+  align-items: flex-start;
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: 1fr 0.5fr;
+}
+/* ------------------------------------------------- */
+/* left */
+.nav-car__list {
+  display: flex;
+  align-items: center;
+}
+.nav-car__list-right {
+  margin-left: auto;
+  display: flex;
+}
+.form-control {
+  height: 3.6rem;
+  border-radius: 2px;
+  background-color: white;
+  border: 1px solid rgb(197, 197, 197);
+  padding: 0.5rem 1rem;
+  color: #333;
+  cursor: pointer;
+}
+.car-select__grid {
+  margin-left: 1rem;
+  display: flex;
+}
+.select__grid-type {
+  color: #eca704;
+  display: inline-block;
+  border: 1px solid currentColor;
+  height: 3.5rem;
+  width: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.7rem;
+}
+.select__grid-type.active,
+.select__grid-type:hover {
+  background-color: #eca704;
+  color: white;
+}
+.select__grid-type:last-child {
+  margin-left: 0.2rem;
+}
+.select__grid-type i {
+  font-size: 1.6rem;
+}
+/* category left */
+.categories-car__list {
+  margin-top: 3rem;
+  display: grid;
+  gap: 2rem;
+  height: 154rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 20rem);
+}
+.categories-car__item {
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 0.75fr 1fr;
+}
+/*  */
+.categories-car__item:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.car-item__content {
+  align-self: center;
+}
+.car-item__name {
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: inline-block;
+  letter-spacing: 1px;
+  color: #eca704;
+  text-transform: uppercase;
+}
+.car-item__name:hover {
+  color: #333;
+}
+.car-item__desc {
+  margin: 0.5rem 0 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
+}
+.car-item__features {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.car-feature__item {
+  width: calc(100% / 3 - 1rem);
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: #333;
+}
+.car-feature__item i {
+  color: #eca704;
+  min-width: 2rem;
+}
+/* car-item__thumbnail  */
+.car-item__thumbnail {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.car-item__thumbnail::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 3;
+}
+.car-item__thumbnail:hover::after {
+  cursor: pointer;
+  display: block;
+  animation: fadeIn 0.2s;
+}
+.car-item__thumbnail:hover > .car-item__tag2 {
+  display: block;
+}
+.car-thumbnail__tag {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  font-size: 1.2rem;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.884);
+  padding: 0.3rem 1.2rem;
+  border-radius: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.car-thumbnail__tag--marked {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffb400;
+  color: white;
+  padding: 0.3rem 5rem;
+  font-size: 1.3rem;
+  transform: rotate(-40deg) translate(-4rem, -1rem);
+  font-weight: 500;
+}
+.car-item__tag-price {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.car-thumbnail__price--strike {
+  color: red;
+  font-size: 1.4rem;
+}
+.car-item__tag-price span {
+  display: block;
+}
+.car-item__tag2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 4;
+  width: 50%;
+}
+.car-item__chose-link {
+  color: white;
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  border: 1px solid white;
+  border-radius: 2px;
+  font-size: 1.3rem;
+  transition: 0.2s all ease-in;
+}
+.car-item__chose-link:hover {
+  background-color: #eca704;
+}
+/* ---------------------------------- */
+/* style for container of showfull image */
+.car-item__showfull {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 110;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.car-item__showfull-inner {
+  max-width: 80%;
+  border-radius: 1rem;
+  height: 60rem;
+  overflow: hidden;
+  animation: fadeIn 0.4s ease-in-out;
+}
+.close__showfullImg {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+}
+.car-item__showfull.active {
+  display: flex;
+}
+/* move to */
+.car-movetopage {
+  text-align: center;
+  margin-top: 3rem;
+}
+.carmove__link {
+  color: #333;
+  padding: 0.8rem 1.5rem;
+  background-color: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 1.4rem;
+}
+.carmove__link--active,
+.carmove__link:hover {
+  background-color: #ffb400;
+  color: white;
+}
+/* ----------------------------------------- */
+/* right */
+.details-right__heading {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.details-right__heading::after,
+.details-right__heading::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  height: 1px;
+  width: 4.5rem;
+  background-color: rgba(160, 160, 160, 0.514);
+}
+.details-right__heading::before {
+  top: calc(100% + 3px);
+  width: 2.5rem;
+}
+.car-list__details-right {
+  padding: 2rem;
+  background-color: rgb(255, 255, 255);
+}
+/* search select */
+.search-cars__select {
+  display: flex;
+  flex-wrap: wrap;
+}
+.search-cars__select > * {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+/* slide price */
+.search-cars__price h4 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+#amount {
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  font-size: 1.6rem;
+  margin: 1rem 0 1.5rem;
+}
+#slider-range__price {
+  margin: 0 auto;
+  height: 6px;
+  border: 0;
+  background-color: rgb(240, 240, 240);
+  width: 90%;
+}
+#slider-range__price .ui-slider-range {
+  background-color: #ffb400;
+  border: 0;
+  outline: none;
+}
+#slider-range__price .ui-slider-handle {
+  top: -5px;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 10%;
+  background-color: #ffb400;
+  border: 0;
+}
+/* search footer */
+.search-cars__footer > * {
+  margin-top: 2rem;
+}
+.otherfeatures-car {
+  display: none;
+  margin-top: 1rem;
+}
+.otherfeatures-car__list {
+  margin-top: 2rem;
+}
+.open__searchcar {
+  cursor: pointer;
+}
+.open__searchcar i {
+  color: #eca704;
+}
+.otherfeatures-car__item {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.form-checkbox {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+.otherfeatures-car__item label {
+  font-size: 1.4rem;
+  color: #333;
+  margin-left: 1rem;
+}
+.otherfeatures-car.active {
+  display: block;
+  animation: fadeIn 0.4s ease-in;
+}
+.btn-search-cars {
+  display: block;
+  color: white;
+  background-color: #eca704;
+  text-align: center;
+  padding: 0.6rem;
+  transition: all 0.4s ease-out;
+}
+.btn-search-cars:hover {
+  background-color: rgb(74, 128, 228);
+}
+/* recent post */
+.recent-posts,
+.search-cars,
+.category__right,
+.get-question {
+  margin-bottom: 2.5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+.recent-posts__details {
+  margin-top: 2rem;
+}
+.recent-posts__list {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.recent-post__item-link img {
+  border-radius: 2px;
+}
+.recent-post__item-link {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 7rem 1fr;
+  align-items: center;
+  padding: 1rem;
+}
+.recent-post__item-link:hover {
+  background-color: rgba(156, 156, 156, 0.1);
+}
+.post__item-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: rgb(26, 26, 26);
+}
+.post__item-desc {
+  margin-top: 0.6rem;
+  color: #777;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+.post__item-desc span {
+  padding: 0 0.5rem;
+}
+.post__item-desc span:first-child {
+  border-right: 1px solid #777;
+}
+/* category */
+.category__right-details,
+.get-question__details {
+  margin-top: 2rem;
+}
+.category__detail-item,
+.question__info-item {
+  margin-bottom: 0.8rem;
+}
+.category__detail-item:last-child,
+.question__info-item:last-child {
+  margin-bottom: 0;
+}
+.category__details-link,
+.question__info-link {
+  line-height: 1.6;
+  font-size: 1.4rem;
+  font-weight: 400;
+  display: block;
+  color: #333;
+}
+.category__details-link:hover {
+  color: #eca704;
+}
+/* get question */
+.get-question {
+  border-bottom: 0;
+}
+.question__info-link i {
+  min-width: 2rem;
+}
+.get-question__socials {
+  margin-top: 2rem;
+  display: flex;
+}
+.question__social-link {
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 2px;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  opacity: 0.9;
+  background-color: var(--bg-facebook);
+}
+.question__social-link:hover {
+  opacity: 1;
+}
+.question__social-item:nth-child(2) .question__social-link {
+  background-color: var(--bg-twitter);
+}
+.question__social-item:nth-child(3) .question__social-link {
+  background-color: var(--bg-google);
+}
+.question__social-item:nth-child(4) .question__social-link {
+  background-color: var(--bg-rss);
+}
+.question__social-item:last-child .question__social-link {
+  background-color: var(--bg-linked);
+}
+/* ----------------------------- */
+/* move to top */
+.move-to-top-btn {
+  position: fixed;
+  bottom: 15%;
+  right: 2rem;
+  color: white;
+  background-color: #eca704;
+  z-index: 98;
+  padding: 0.5rem 0.8rem;
+  border-radius: 3px;
+  display: none;
+}
+/* change grid */
+.categories-car__list.change {
+  height: 155rem;
+  grid-template-rows: repeat(7, 37rem);
+  grid-template-columns: 1fr 1fr;
+}
+.categories-car__list.change .categories-car__item {
+  grid-template-columns: 1fr;
+}
+.categories-car__list.change .categories-car__item .car-item__thumbnail {
+  height: 20rem;
+}
+.categories-car__list.change .categories-car__item .car-item__content {
+  padding: 1rem;
+}
+.categories-car__list.change .categories-car__item .car-item__features {
+  width: 100%;
+}
+.categories-car__list.change
+  .categories-car__item
+  .car-item__features
+  .car-feature__item {
+  width: calc(100% / 3);
+}
+/* gallery car */
+.gallery-car {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.btnPrev,
+.btnNext {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+}
+.btnPrev {
+  left: 12%;
+}
+.btnNext {
+  right: 12%;
+}
+.close__gallery-car {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: white;
+  cursor: pointer;
+}
+.gallery-car__img {
+  height: 100%;
+}
+.gallery-car__list {
+  position: relative;
+  background: white;
+  width: 80%;
+  height: 50rem;
+  border-radius: 10px;
+}

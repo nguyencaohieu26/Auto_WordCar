@@ -2,6 +2,11 @@
 :root {
   --primary-color: #ed563b;
   --text-color: #232d39;
+  --bg-facebook: #4867aa;
+  --bg-twitter: #3cf;
+  --bg-google: #db4437;
+  --bg-rss: #e78733;
+  --bg-linked: #0177b5;
 }
 /* Default setting */
 /* 
@@ -47,6 +52,12 @@ button {
   max-width: 1100px;
   margin: 0 auto;
 }
+button {
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+}
 /* animate */
 @keyframes animatetop {
   from {
@@ -63,6 +74,16 @@ button {
     opacity: 0;
   }
   to {
+    opacity: 1;
+  }
+}
+@keyframes animateRight {
+  from {
+    right: -100%;
+    opacity: 0;
+  }
+  to {
+    right: 0;
     opacity: 1;
   }
 }

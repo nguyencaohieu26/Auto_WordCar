@@ -1,0 +1,55 @@
+/*  */
+@media only screen and (max-width: 992px) {
+  .main__car-list-detail {
+    grid-template-columns: 1fr;
+  }
+  .category__details-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .category__detail-item {
+    width: 150px;
+  }
+  .car-item__showfull-inner {
+    height: 60vh;
+    max-width: 95%;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .car-item__name {
+    font-size: 1.6rem;
+  }
+  .car-feature__item {
+    width: calc(100% / 3 - 1rem);
+    font-size: 1.1rem;
+  }
+  .car-item__desc {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .car-item__features {
+    width: 100%;
+  }
+  .nav-car__list {
+    flex-wrap: wrap;
+  }
+  .nav-car__list > * {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+  }
+  .select__grid-type[data-grid="grid-1"] {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .categories-car__list {
+    height: 260rem;
+    grid-template-rows: repeat(7, 35rem);
+  }
+  .categories-car__item {
+    grid-template-columns: 1fr;
+  }
+  .car-item__content {
+    padding: 1.5rem;
+  }
+}
