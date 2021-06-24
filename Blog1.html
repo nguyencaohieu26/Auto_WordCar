@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ford</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- gg font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,100&display=swap"
+    rel="stylesheet"
+  />
+  <!-- link base stylesheet -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <!-- link stylesheet -->
+  <link rel="stylesheet" href="assets/css/Home/home_page.css" />
+  <link rel="stylesheet" href="./assets/css/blogchild.css" />
+  <!-- link responsive -->
+  <link rel="stylesheet" href="assets/css/Home/home__responsive.css" />
+  <link rel="stylesheet" href="./assets/css/blogchild__reponsive.css" />
+</head>
+<body>
+  <section class="home__page">
+    <!-- header -->
+    <header class="header">
+      <div class="header__scroll">
+        <div class="row-index">
+          <div class="header__nav">
+            <!-- logo -->
+            <div class="header__logo">
+              <a href="#" class="header__logo-link">
+                AUTO WORLD <span>WEBSITE</span>
+              </a>
+            </div>
+            <!-- nav -->
+            <div class="menu__nav">
+              <nav class="header__nav-top">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item">
+                    <a
+                      href="#"
+                      class="header__nav-link header__nav-link--active"
+                      >HOME</a
+                    >
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>PRODUCTS</span>
+                      <i class="nav-icon fas fa-caret-down"></i>
+                    </a>
+                    <ul class="nav-child__list">
+                      <li class="nav__child-item">
+                        <a href="#" class="nav-child__link">Cars</a>
+                        <!-- submenu c2 -->
+                        <ul class="submenu-c2__list">
+                          <li class="submenu-c2__item">
+                            <a href="#" class="submenu-c2__link">Honda</a>
+                          </li>
+                          <li class="submenu-c2__item">
+                            <a href="#" class="submenu-c2__link">Toyota</a>
+                          </li>
+                          <li class="submenu-c2__item">
+                            <a href="#" class="submenu-c2__link">Lexus</a>
+                          </li>
+                          <li class="submenu-c2__item">
+                            <a href="#" class="submenu-c2__link">BMW</a>
+                          </li>
+                          <li class="submenu-c2__item">
+                            <a href="#" class="submenu-c2__link">Mazada</a>
+                          </li>
+                          <li class="submenu-c2__item">
+                            <a href="#" class="submenu-c2__link">Audi</a>
+                          </li>
+                          <li class="submenu-c2__item">
+                            <a href="#" class="submenu-c2__link">Ford</a>
+                          </li>
+                          <li class="submenu-c2__item">
+                            <a href="#" class="submenu-c2__link">Mercedes Benz</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav__child-item">
+                        <a href="#" class="nav-child__link">Motors</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>ABOUT</span>
+                      <i class="nav-icon fas fa-caret-down"></i>
+                    </a>
+                    <!-- submenu c1 -->
+                    <ul class="nav-child__list">
+                      <li class="nav__child-item">
+                        <a href="./about-us.html" class="nav-child__link">ABOUT US</a>
+                      </li>
+                      <li class="nav__child-item">
+                        <a href="./Blog.html" class="nav-child__link">BLOG</a>
+                      </li>
+                      <li class="nav__child-item">
+                        <a href="#" class="nav-child__link">TEAM</a>
+                      </li>
+                      <li class="nav__child-item">
+                        <a href="#" class="nav-child__link">TESTIMONIALS</a>
+                      </li>
+                      <li class="nav__child-item">
+                        <a href="#" class="nav-child__link">FAQ</a>
+                      </li>
+                      <li class="nav__child-item">
+                        <a href="#" class="nav-child__link">TERMS</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="./contact.html" class="header__nav-link">CONTACT</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- menu icon -->
+            <div class="header__menu-icon">
+              <div class="header__cart">
+                <i class="fas fa-shopping-cart" title="Cart"></i>
+                <span>0</span>
+              </div>
+              <div class="header__login" title="Login/ Register">
+                <i class="fa fa-user"></i>
+              </div>
+              <!-- menu toggle -->
+              <div class="header__burger" >
+                <i class="fa fa-bars"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile nav -->
+    </header>
+    <!-- login form -->
+    <div class="auto-world__login">
+      <div class="close__loginform">
+        <i class="fa fa-times"></i>
+      </div>
+      <div class="auto-world__login-detail">
+        <div class="login-detail__left">
+          <h4>Sign into your account</h4>
+          <div class="login__chose-btns">
+            <a href="#" class="btn btn-login-chose active">Login</a><a href="#" class="btn btn-login-chose">Register</a>
+          </div>
+          <form action="#" class="login-form active" name-form ="Login" >
+            <input type="text" placeholder="Email Address" required>
+            <input type="text" placeholder="Password" required>
+            <button href="#" class="btn btn-login btn-submit-login">Login</button>
+            <p class="forgot-password">Forgot Password</p>
+          </form>
+          <form action="#" class="register-form " name-form ="Register">
+            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Email Address" required>
+            <input type="text" placeholder="Password" required>
+            <button href="#" class="btn btn-login btn-submit-register">Register</button>
+          </form>
+        </div>
+        <div class="login-detail__right">
+          <div class="login-details__img">
+            <img src="assets/image/index/pexels-sourav-mishra-1149831.jpg" alt="login__img">
+          </div>
+            <div class="login-details__img-content">
+              <h5>Auto World</h5>
+              <p>WELCOME YOU</p>
+              <div class="login-socials__list">
+                <a href="#" class="login-social__link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="login-social__link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="login-social__link">
+                  <i class="fab fa-google"></i>
+                </a>
+                <a href="#" class="login-social__link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- video -->
+    <section class="video__index" id="top__video">
+      <video
+        src="assets/image/index/video/The New EQS- World Premiere - Trailer.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <div class="video__index-content">
+        <h2 class="home__heading">BEST <span>CAR DEALER</span> IN TOWN!</h2>
+        <a href="#" class="btn btn-contact-us">CONTACT US</a>
+      </div>
+    </section>
+    <!-- blog -->
+    <div class="k-blog-child">
+      <div class="row-index">
+        <div class="h-blog-child">
+          <img src="./assets/image/blog/1.jpg" class="img-blog-child"/>
+          <div class="word-blog-child">
+            <h3 class="heading-blog-child">Ford Reveals Bronco ULTRA4 4400 Unlimited Class Extreme Race Trucks to Tackle King of the Hammers Off-Road Race</h3>
+            <p class="by-blog-child">BY Matthew Meek</p>
+            <p class="content-blog-child">
+              Bronco® is marking a new chapter in its high-speed off-road performance, debuting three all-new Bronco 4400 series race trucks at the 2021 King of the Hammers off-road event in Johnson Valley, California – a testing ground for the Built Wild™ outdoor brand<br>
+              All-star lineup of Bronco drivers includes Fun-Haver teammates Vaughn Gittin Jr. and two-time King of the Hammers winner Loren Healy, plus three-time Hammers winner Jason Scherer – all piloting custom-built Bronco race trucks in the ULTRA4 4400 unlimited class<br>
+              Ford and Bronco brands continue their off-road performance presence as the official truck and SUV of the ULTRA4 series – one of the most extreme off-road competition series in the world, combining high-speed desert racing with low-speed rock crawling
+            </p>
+            <p class="content-blog-child">
+              <b>DEARBORN, Mich., Feb. 1, 2021 – </b>
+              Built to conquer boulder fields and dry lakes, Bronco® – the outdoor brand of Built Wild™ 4x4 SUVs from Ford – expands its off-road presence by debuting three custom-built Bronco ULTRA4 4400 unlimited class race trucks that will compete in this year’s grueling King of the Hammers off-road racing event, which runs tomorrow through Saturday in Johnson Valley, California. “King of the Hammers inspired us to ensure every production Bronco model delivers the capability, durability and highspeed off-road experience this growing off-road enthusiast community has been trying to create on their own,” said Mark Grueber, Bronco marketing manager. “These Bronco 4400 race trucks underscore our commitment to Bronco Built Wild capability and innovation in the red-hot off-road racing scene.” Bronco 4400 race trucks Representing the original ULTRA4 unlimited class that helped launch the King of the Hammers race event, Bronco 4400 trucks feature a fully custom tubular chassis with massive off-road tires and long-travel shocks. Under the hood, high-power engines and custom 4x4 driveline systems build on Bronco brand’s racing heritage. Race-prepped cabins are highlighted by the first-ever FIA off-road-certified Pro Pacer XL ORV race shells from Recaro® .
+            </p>
+            <p class="content-blog-child">
+              Designed in the theme of the Bronco R Race Prototype, Bronco 4400s represent the return of Bronco 4x4s to sanctioned off-road racing. “With the Bronco R Race Prototype at the Baja 1000 and the Bronco Sport victory at the Rebelle Rally, the debut of the three Bronco 4400 race trucks shows Ford Performance’s growing commitment to Bronco in off-road competition,” said Mark Rushbrook, global director, Ford Performance Motorsports. “These 4x4 vehicles are modeled after the all new Bronco two- and four-door production SUVs with their combination of high-speed desert running and rock crawling agility.” Bronco 4400 series teams feature an all-star lineup of off-road racing veterans, including Fun-Haver teammates Vaughn Gittin Jr. and two-time King of the Hammers champion Loren Healy each piloting their own custom-built Bronco 4400 race trucks, and Jason Scherer, a three-time King of the Hammers champion, driving a third Bronco 4400 race truck. “This is a killer opportunity to bring a new flavor of Bronco to the Hammers and push the Bronco brand deeper into the competitive off-road scene, while also building the foundation for future Bronco off-road racing vehicles,” said Gittin Jr.
+            </p>
+            <p class="content-blog-child">
+              Bronco brand will have several vehicles on display, including the Bronco R Race Prototype, which served as a test bed for production Bronco two- and four-door SUVs and recently finished the grueling Baja 1000. Also on hand will be Bronco Sport, which brought home a class win at the 2020 Rebelle Rally. Plus, one never-before-seen Bronco model debuts live Wednesday at King of the Hammers.
+            </p>
+            <p class="content-blog-child">
+              The all-new 2021 Bronco two-door, four-door and Bronco Sport models on site will provide many enthusiasts their first up-close and personal look at the all-new family of rugged SUVs – with media drives of Bronco Sport and ride-alongs in Bronco offered throughout the week. Official truck and SUV of ULTRA4 King of the Hammers consists of 90-mile courses across high-speed desert sands and rock crawling across tricky terrain. It is one of the most extreme off-road competitions in the world. Each year, a pop-up city converges on the barren Johnson Valley to watch the race, with millions more viewing online. This year’s event begins on Tuesday with qualifying.
+            </p>
+            <p class="content-blog-child">
+              The official race is Saturday, with 450 teams expected from around the world – in both modified stock and extreme off-road vehicles. All will compete to be crowned king in one of the most grueling desert courses ever created combining high-speed racing with low-speed rock crawling. “It’s great to see the growing Ford support for ULTRA4 racing, first as our official vehicle partner and now with the addition of the Bronco 4400 series race trucks,” said David Cole, president, Hammerking Productions/ULTRA4 Racing. “Their expanded involvement will help build interest in the series and raise the level of competition.”
+            </p>
+            <p class="content-blog-child">
+              The collaboration between Ford and ULTRA4 continues the automaker’s growing presence in the off-road enthusiast realm. Recently, Ford stepped up to serve as official truck and SUV of SCORE-International Off-Road Racing, which holds the Baja 500, Baja 1000 and San Felipe 250 championships in Mexico. Ford also serves as official vehicle of the Best in the Desert race series.<br>
+              The 2021 King of the Hammers race will be livestreamed at www.ultra4racing.com/ultra4-racing-live.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__details">
+        <!-- footer top -->
+        <div class="footer__top">
+          <div class="row-index">
+            <div class="footer__top-list">
+              <div class="footer__top-item">
+                <h3 class="footer__logo">
+                  <a href="#" class="footer__logo-link">AUTO WORLD</a>
+                </h3>
+                <div class="footer__top-content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, vel magni, ad quidem sapiente soluta quam odit aspernatur nostrum fugit a. Architecto, tempora repellat vitae excepturi sapiente sequi consequuntur dolor.
+                  </p>
+                </div>
+              </div>
+              <div class="footer__top-item">
+                <h3 class="footer__top-heading">Contact Info</h3>
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-map-pin"></i>
+                      <span>20/F Green Road, Dhanmondi, Dhaka</span>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-envelope-open-text"></i>
+                      <span>info@gmail.com</span>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-phone"></i>
+                      <span>+0999 9999 999</span>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-fax"></i>
+                      <span>+0477 85X6 552</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__top-item">
+                <h3 class="footer__top-heading">Useful Links</h3>
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-chevron-right"></i>
+                      <span>Home</span>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-chevron-right"></i>
+                      <span>Products</span>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-chevron-right"></i>
+                      <span>About Us</span>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-chevron-right"></i>
+                      <span>Testimonials</span>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-chevron-right"></i>
+                      <span>Blog</span>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-chevron-right"></i>
+                      <span>Contact</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__top-item">
+                <h3 class="footer__top-heading">Subscribe</h3>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit.
+                </p>
+                <form action="#" class="footer-contact">
+                  <input type="text" placeholder="Enter Address" />
+                  <a href="" class="btn btn-footer-contact">
+                    <i class="fab fa-telegram-plane"></i>
+                  </a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer bottom -->
+        <div class="footer__bottom">
+          <div class="row-index">
+            <div class="footer__bottom-details">
+              <p class="copy-right">&copy; Made with love</p>
+              <div class="footer__social-icon">
+                <ul class="footer__social-list">
+                  <li class="footer__social-item">
+                    <a href="#" class="footer__social-link social--bg-blue1">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a href="#" class="footer__social-link social--bg-blue3">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a href="#" class="footer__social-link social--bg-red">
+                      <i class="fab fa-google-plus-g"></i>
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a href="#" class="footer__social-link social--bg-blue2">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js">
+  </script>
+  <script>
+    // smooth scroll 
+    $(document).ready(function(){
+      $('a').click(function(event){
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 1100);
+        event.preventDefault();
+      });
+    })
+  </script>
+  <script src="assets/js/home__page.js"></script>
+</body>
+</html>

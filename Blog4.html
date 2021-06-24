@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volvo</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- gg font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,100&display=swap"
+    rel="stylesheet"
+  />
+  <!-- link base stylesheet -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <!-- link stylesheet -->
+  <link rel="stylesheet" href="assets/css/Home/home_page.css" />
+  <link rel="stylesheet" href="./assets/css/blogchild.css" />
+  <!-- link responsive -->
+  <link rel="stylesheet" href="assets/css/Home/home__responsive.css" />
+  <link rel="stylesheet" href="./assets/css/blogchild__reponsive.css" />
+</head>
+<body>
+  <section class="home__page">
+    <!-- header -->
+    <header class="header">
+      <div class="header__scroll">
+        <div class="row-index">
+          <div class="header__nav">
+            <!-- logo -->
+            <div class="header__logo">
+              <a href="#" class="header__logo-link">
+                AUTO WORLD <span>WEBSITE</span>
+              </a>
+            </div>
+            <!-- nav -->
+            <div class="menu__nav">
+              <nav class="header__nav-top">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item">
+                    <a
+                      href="#"
+                      class="header__nav-link header__nav-link--active"
+                      >HOME</a
+                    >
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>PRODUCTS</span>
+                      <i class="nav-icon fas fa-caret-down"></i>
+                    </a>
+                    <ul class="nav-child__list">
+                      <li class="nav__child-item">
+                        <a href="#" class="nav-child__link">Cars</a>
+                        <!-- submenu c2 -->
+                        <ul class="submenu-c2__list">
+                          <li class="submenu-c2__item">
+                            <a href="#" class="submenu-c2__link">Honda</a>
+                          </li>
+                          <li class="submenu-c2__item">
+                            <a href="#" class="submenu-c2__link">Toyota</a>
+                          </li>
+                          <li class="submenu-c2__item">
+                            <a href="#" class="submenu-c2__link">Lexus</a>
+                          </li>
+                          <li class="submenu-c2__item">
+                            <a href="#" class="submenu-c2__link">BMW</a>
+                          </li>
+                          <li class="submenu-c2__item">
+                            <a href="#" class="submenu-c2__link">Mazada</a>
+                          </li>
+                          <li class="submenu-c2__item">
+                            <a href="#" class="submenu-c2__link">Audi</a>
+                          </li>
+                          <li class="submenu-c2__item">
+                            <a href="#" class="submenu-c2__link">Ford</a>
+                          </li>
+                          <li class="submenu-c2__item">
+                            <a href="#" class="submenu-c2__link">Mercedes Benz</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav__child-item">
+                        <a href="#" class="nav-child__link">Motors</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      <span>ABOUT</span>
+                      <i class="nav-icon fas fa-caret-down"></i>
+                    </a>
+                    <!-- submenu c1 -->
+                    <ul class="nav-child__list">
+                      <li class="nav__child-item">
+                        <a href="./about-us.html" class="nav-child__link">ABOUT US</a>
+                      </li>
+                      <li class="nav__child-item">
+                        <a href="./Blog.html" class="nav-child__link">BLOG</a>
+                      </li>
+                      <li class="nav__child-item">
+                        <a href="#" class="nav-child__link">TEAM</a>
+                      </li>
+                      <li class="nav__child-item">
+                        <a href="#" class="nav-child__link">TESTIMONIALS</a>
+                      </li>
+                      <li class="nav__child-item">
+                        <a href="#" class="nav-child__link">FAQ</a>
+                      </li>
+                      <li class="nav__child-item">
+                        <a href="#" class="nav-child__link">TERMS</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="./contact.html" class="header__nav-link">CONTACT</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- menu icon -->
+            <div class="header__menu-icon">
+              <div class="header__cart">
+                <i class="fas fa-shopping-cart" title="Cart"></i>
+                <span>0</span>
+              </div>
+              <div class="header__login" title="Login/ Register">
+                <i class="fa fa-user"></i>
+              </div>
+              <!-- menu toggle -->
+              <div class="header__burger" >
+                <i class="fa fa-bars"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile nav -->
+    </header>
+    <!-- login form -->
+    <div class="auto-world__login">
+      <div class="close__loginform">
+        <i class="fa fa-times"></i>
+      </div>
+      <div class="auto-world__login-detail">
+        <div class="login-detail__left">
+          <h4>Sign into your account</h4>
+          <div class="login__chose-btns">
+            <a href="#" class="btn btn-login-chose active">Login</a><a href="#" class="btn btn-login-chose">Register</a>
+          </div>
+          <form action="#" class="login-form active" name-form ="Login" >
+            <input type="text" placeholder="Email Address" required>
+            <input type="text" placeholder="Password" required>
+            <button href="#" class="btn btn-login btn-submit-login">Login</button>
+            <p class="forgot-password">Forgot Password</p>
+          </form>
+          <form action="#" class="register-form " name-form ="Register">
+            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Email Address" required>
+            <input type="text" placeholder="Password" required>
+            <button href="#" class="btn btn-login btn-submit-register">Register</button>
+          </form>
+        </div>
+        <div class="login-detail__right">
+          <div class="login-details__img">
+            <img src="assets/image/index/pexels-sourav-mishra-1149831.jpg" alt="login__img">
+          </div>
+            <div class="login-details__img-content">
+              <h5>Auto World</h5>
+              <p>WELCOME YOU</p>
+              <div class="login-socials__list">
+                <a href="#" class="login-social__link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="login-social__link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="login-social__link">
+                  <i class="fab fa-google"></i>
+                </a>
+                <a href="#" class="login-social__link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- video -->
+    <section class="video__index" id="top__video">
+      <video
+        src="assets/image/index/video/The New EQS- World Premiere - Trailer.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <div class="video__index-content">
+        <h2 class="home__heading">BEST <span>CAR DEALER</span> IN TOWN!</h2>
+        <a href="#" class="btn btn-contact-us">CONTACT US</a>
+      </div>
+    </section>
+    <!-- blog-child -->
+    <div class="k-blog-child">
+      <div class="row-index">
+        <div class="h-blog-child">
+          <img src="./assets/image/blog/4.jpg" class="img-blog-child"/>
+          <div class="word-blog-child">
+            <h3 class="heading-blog-child">Volvo gives U.S. Veterans opportunities to apply their skills in the $1T auto industry</h3>
+            <p class="by-blog-child">BY Matthew Meek</p>
+            <p class="content-blog-child">
+              <b>AutoWorld.com - ROCKLEIGH, NJ</b>
+              (May 29, 2020) Volvo is looking for a few good men and women to join its army of certified automotive technicians and start a career in one of the world’s largest economic drivers: the $1T auto manufacturing and servicing industry.
+            </p>
+            <p class="content-blog-child">
+              The new Volvo Car USA Veteran Technician Careers Program prioritizes military Veterans and currently-serving members of the National Guard and Reserve in the build-up of Volvo Quality Level Technicians and Volvo Hybrid Specialists across its U.S. retail network.
+            </p>
+            <p class="content-blog-child">
+              This special initiative supports those who are willing to make the ultimate sacrifice for their country and enables independent Volvo Cars retailers to better serve Volvo owners by enhancing the quality and capacity of their service operations.
+            </p>
+            <p class="content-blog-child">
+              “On the heels of this Memorial Day especially, I’m re-inspired by the brave men and women who sacrifice so much to protect this country,” said Anders Gustafsson, Senior Vice President Americas and President and CEO, Volvo Car USA. “It is our great pleasure that we can give back by giving them the opportunity to apply the skills they gained in the military toward a civilian career.”
+            </p>
+            <p class="content-blog-child">
+              To become either a Volvo Quality Level Technician or Volvo Hybrid Specialist, participants first complete a comprehensive training program at one of several Volvo Cars Training Centers across the U.S.
+            </p>
+            <p class="content-blog-child">
+              Those eligible for GI Bill® benefits can receive a monthly stipend to aid in their successful transition from military service to a new career with a participating Volvo Cars retailer.
+            </p>
+            <p class="content-blog-child">
+              The Volvo Car USA Veteran Technician Careers Program will be managed in collaboration with CALIBRE Systems, Inc. (CALIBRE) – an employee-owned management consulting and digital transformation company that supports Defense, Federal / Civil, National Security, and Commercial clients. CALIBRE pioneered Original Equipment Manufacturer (OEM) Veteran technician programs, to include award winning, US Department of Labor, and GI Bill® approved Veteran service technician programs among the industry’s most iconic brands. Volvo Car USA is partnering with CALIBRE to place up to 120 former military Veterans across its growing US retailer network annually through this program.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__details">
+        <!-- footer top -->
+        <div class="footer__top">
+          <div class="row-index">
+            <div class="footer__top-list">
+              <div class="footer__top-item">
+                <h3 class="footer__logo">
+                  <a href="#" class="footer__logo-link">AUTO WORLD</a>
+                </h3>
+                <div class="footer__top-content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum, vel magni, ad quidem sapiente soluta quam odit
+                    aspernatur nostrum fugit a. Architecto, tempora repellat
+                    vitae excepturi sapiente sequi consequuntur dolor.
+                  </p>
+                </div>
+              </div>
+              <div class="footer__top-item">
+                <h3 class="footer__top-heading">Contact Info</h3>
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-map-pin"></i>
+                      <span>20/F Green Road, Dhanmondi, Dhaka</span>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-envelope-open-text"></i>
+                      <span>info@gmail.com</span>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-phone"></i>
+                      <span>+0999 9999 999</span>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-fax"></i>
+                      <span>+0477 85X6 552</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__top-item">
+                <h3 class="footer__top-heading">Useful Links</h3>
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-chevron-right"></i>
+                      <span>Home</span>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-chevron-right"></i>
+                      <span>Products</span>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-chevron-right"></i>
+                      <span>About Us</span>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-chevron-right"></i>
+                      <span>Testimonials</span>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-chevron-right"></i>
+                      <span>Blog</span>
+                    </a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">
+                      <i class="fas fa-chevron-right"></i>
+                      <span>Contact</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__top-item">
+                <h3 class="footer__top-heading">Subscribe</h3>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in
+                  culpa qui officia deserunt mollit.
+                </p>
+                <form action="#" class="footer-contact">
+                  <input type="text" placeholder="Enter Address" />
+                  <a href="" class="btn btn-footer-contact">
+                    <i class="fab fa-telegram-plane"></i>
+                  </a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer bottom -->
+        <div class="footer__bottom">
+          <div class="row-index">
+            <div class="footer__bottom-details">
+              <p class="copy-right">&copy; Made with love</p>
+              <div class="footer__social-icon">
+                <ul class="footer__social-list">
+                  <li class="footer__social-item">
+                    <a href="#" class="footer__social-link social--bg-blue1">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a href="#" class="footer__social-link social--bg-blue3">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a href="#" class="footer__social-link social--bg-red">
+                      <i class="fab fa-google-plus-g"></i>
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a href="#" class="footer__social-link social--bg-blue2">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js">
+  </script>
+  <script>
+    // smooth scroll 
+    $(document).ready(function(){
+      $('a').click(function(event){
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 1100);
+        event.preventDefault();
+      });
+    })
+  </script>
+  <script src="assets/js/home__page.js"></script>
+</body>
+</html>

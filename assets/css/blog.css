@@ -1,0 +1,31 @@
+/*blog*/
+.k-blog {
+    margin: 5rem 1rem;
+}
+.h-blog {
+    background-color: rgb(233, 233, 233);
+    color: black;
+    padding: 1rem;
+}
+.ul-blog {
+    list-style: none;
+}
+.li-blog {
+    display: flex;
+    height: 200px;
+    margin: 2rem;
+}
+.img-blog {
+    width: 40%;
+    padding-right: 1rem;
+}
+.word-blog {
+    width: 60%;
+    padding-left: 1rem;
+}
+.heading-blog {
+    padding: 30px 0;
+}
+.word-blog a:hover {
+    color: red;
+}

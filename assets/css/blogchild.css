@@ -1,0 +1,28 @@
+/* blog-child */
+.k-blog-child {
+    margin: 5rem 1rem 2rem;
+}
+.h-blog-child {
+    display: flex;
+}
+.img-blog-child {
+    width: 30%;
+    padding-right: 1rem;
+}
+.word-blog-child {
+    width: 70%;
+    padding-left: 1rem;
+}
+.heading-blog-child {
+    text-align: center;
+    padding: 0rem 1rem 1rem;
+}
+.by-blog-child {
+    text-align: right;
+    font-size: 10px;
+    padding-bottom: 1rem;
+}
+.content-blog-child {
+    font-size: 14px;
+    padding-bottom: 1rem;
+}
