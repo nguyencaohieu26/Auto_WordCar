@@ -17,6 +17,9 @@
   }
 }
 @media only screen and (max-width: 860px) {
+  .feature-cars__list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
   .header {
     background: white;
   }
