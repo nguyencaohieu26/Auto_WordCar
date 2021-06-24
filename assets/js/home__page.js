@@ -1,32 +1,17 @@
 // scroll function
     const header__topElement = document.querySelector(".header");
-    const movetop2    = document.querySelector(".move-to-top-btn");
     window.onscroll = function() {myFunction()};
       function myFunction() {
           var header__scroll = document.querySelector(".header__scroll");
           if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
             header__scroll.classList.add("active-color")
-            header__topElement.style.padding = "0"
-            movetop2.style.display = "block"
+            header__topElement.style.padding = "0"     
           } else {
             header__scroll.classList.remove("active-color");
-            header__topElement.style.padding = "0 1.5rem"
-            movetop2.style.display = "none"
+            header__topElement.style.padding = "0 1.5rem"          
           }
     }
 // -------------------------------------------------
-// smooth scroll
-    $(document).ready(function () {
-      $("a").click(function (event) {
-        $("html, body").animate(
-          {
-            scrollTop: $($.attr(this, "href")).offset().top,
-          },
-          1100,
-        );
-        event.preventDefault();
-      });
-    });
 // ---------------------------------------------
 // pre loading
     var loadElement = document.querySelector(".pre-loading");
@@ -39,6 +24,18 @@
      document.location.reload()
    })
 // --------------------------------------------------
+    // smooth scroll
+    $(document).ready(function () {
+      $("a").click(function (event) {
+        $("html, body").animate(
+          {
+            scrollTop: $($.attr(this, "href")).offset().top,
+          },
+          1100,
+        );
+        event.preventDefault();
+      });
+    });
 // open & close login/ register
     const openLoginElement = document.querySelector(".header__login");
     const loginformElement = document.querySelector(".auto-world__login");
