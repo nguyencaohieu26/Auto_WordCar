@@ -5,7 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/contact_page.css" />
-    <link rel="stylesheet" href="assets/css/contact__responsive.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/Home/home_page.css">
+    <link rel="stylesheet" href="assets/css/Home/home__responsive.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -263,6 +265,8 @@
         </div>
       </div>
     </div>
+    <!-- GG API MAP -->
+    <div id="map"></div>
     <!-- footer -->
     <footer class="footer">
       <div class="footer__details">
@@ -403,6 +407,38 @@
         </div>
       </div>
     </footer>
+        <!-- API KEY: AIzaSyAljinUE4S0YU5UADoJYaNhm3qVQg6d7jE -->
+        <script>
+          function initMap() {
+            // map options
+            var options = {
+              zoom: 8,
+              center: {lat: 42.361145, lng: -71.057083}
+            }
+
+            // new map
+            var map = new 
+            google.maps.Map(document.getElementById('map'), options);
+
+            // add marker
+            var market = new google.maps.Marker({
+              position:{lat: 42.4668, lng: -70.9495},
+              map:map,
+            });
+
+            // var infoWindow = new google.maps.infoWindow({
+            //   content:'<h2>Hello</h2>'
+            // });
+            
+            // marker.addListener('click', function(){
+            //   infoWindow.open(map, marker);
+            // });
+          }
+        </script>
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAljinUE4S0YU5UADoJYaNhm3qVQg6d7jE&callback=initMap&libraries=&v=weekly"
+          async
+        ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       // smooth scroll

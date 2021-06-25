@@ -47,6 +47,10 @@
   margin: auto;
   margin-top: 30px;
 }
+.contact-us__content button:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
 .contact-us__content-right-items {
   display: flex;
   align-items: center;
@@ -59,4 +63,9 @@
   text-align: center;
   margin-top: 100px;
   font-size: 3rem;
+}
+/* GG MAP API */
+  #map {
+  height: 400px;
+  width: 100%;
 }
