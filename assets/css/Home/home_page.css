@@ -394,7 +394,6 @@
   height: 95vh;
   position: relative;
   z-index: 2;
-  animation: fadeIn 1s ease-in-out 1s;
 }
 .video__index::after {
   position: absolute;

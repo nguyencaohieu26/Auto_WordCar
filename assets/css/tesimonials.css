@@ -1,0 +1,96 @@
+.main__testimonials {
+  background-color: #f9f9f9;
+}
+/* image header */
+.testimonials-details {
+  padding: 6rem 1.5rem 4rem;
+}
+.testimonials__image {
+  background: linear-gradient(
+      to bottom,
+      rgba(38, 44, 65, 0.8),
+      rgba(13, 21, 43, 0.8)
+    ),
+    url(/assets/image/index/send___mess.jpg);
+  min-height: 60vh;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.testimonials__heading {
+  font-size: 4rem;
+  letter-spacing: 1px;
+}
+.testimonials-details__list {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.testimonials-item__thumbnail {
+  overflow: hidden;
+}
+.testimonial-thumbnail__image {
+  height: 18rem;
+  transition: all 0.7s ease-in-out;
+}
+.testimonials-details__item {
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+}
+.testimonials-thumbnail__ava {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -95%);
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  padding: 0.3rem;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+.testimonials-thumbnail__ava img {
+  border-radius: 50%;
+}
+.testimonials-details__item:hover .testimonial-thumbnail__image {
+  transform: scale(1.1);
+}
+.testimonials-details__item:hover .tesimonials-item__quote {
+  color: var(--text-color);
+}
+.testimonials-item__content {
+  margin-top: 3rem;
+  display: grid;
+  gap: 5px;
+  justify-items: center;
+  padding: 0 2rem 1rem;
+}
+.tesimonials-item__quote {
+  transition: all 0.5s ease-in-out;
+}
+.person__name {
+  display: block;
+  color: var(--primary-color);
+}
+.person__position {
+  color: #777;
+}
+.person__quote {
+  font-size: 1.3rem;
+  text-align: center;
+}
+@media only screen and (max-width: 1050px) {
+  .testimonials-thumbnail__ava {
+    transform: translate(-50%, -115%);
+  }
+}
+@media only screen and (max-width: 950px) {
+  .testimonials-thumbnail__ava {
+    transform: translate(-50%, -90%);
+  }
+}

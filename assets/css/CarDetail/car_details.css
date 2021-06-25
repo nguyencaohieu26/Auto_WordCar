@@ -267,12 +267,12 @@ ul.car__specification-list li i {
   z-index: 10;
 }
 .btn-test-drive {
-  color: rgb(80, 80, 80);
+  color: white;
   display: block;
   padding: 0.6rem;
   text-align: center;
-  border: 2px solid var(--text-color);
   border-radius: 3px;
+  background-color: var(--primary-color);
 }
 .btn-test-drive:hover {
   background: var(--text-color);

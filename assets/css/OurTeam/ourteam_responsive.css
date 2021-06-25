@@ -1,0 +1,78 @@
+@media only screen and (max-width: 1000px) {
+  .ourteams__list {
+    grid-template-areas:
+      "A B C D"
+      "E F G H"
+      "J Q K U";
+  }
+  .ourteam__item--horizontal {
+    display: block;
+  }
+  .ourteam__item--horizontal {
+    max-height: 50rem;
+  }
+  .ourteam__item--horizontal .person-team__content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .ourteam__item--horizontal .person-team-info {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .ourteams__list {
+    grid-template-areas:
+      "A B C"
+      "D E F"
+      "G H J"
+      "Q K U";
+    align-content: start;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .ourteam__heading::before,
+  .ourteam__heading::after {
+    left: 20%;
+  }
+  .ourteam__heading::after {
+    width: 50%;
+  }
+  .ourteam__heading::before {
+    width: 15%;
+  }
+  .ourteams__list {
+    grid-template-areas:
+      "A B"
+      "D C"
+      "E F"
+      "G H"
+      "J Q"
+      "K U";
+  }
+  .ourteam__item--horizontal {
+    max-height: 60rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .ourteam__heading {
+    font-size: 4rem;
+  }
+  .ourteams__list {
+    grid-template-areas:
+      "A"
+      "B"
+      "D"
+      "C"
+      "E"
+      "F"
+      "G"
+      "H"
+      "J"
+      "Q"
+      "K"
+      "U";
+  }
+  .ourteam__item--horizontal {
+    max-height: 65rem;
+  }
+}
