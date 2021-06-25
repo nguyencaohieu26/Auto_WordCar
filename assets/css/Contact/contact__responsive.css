@@ -1,0 +1,21 @@
+@media only screen and (max-width: 768px) {
+  .contact-us__form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-us__content-right {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contact-us__content-right-items {
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contact-us__content-right-items,
+  .contact-us__content-left input {
+    width: 100%;
+  }
+}
