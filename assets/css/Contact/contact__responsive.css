@@ -1,9 +1,15 @@
+@media only screen and (max-width: 1024px) {
+  .contact-us__content-left input {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 768px) {
   .contact-us__form {
     display: flex;
     flex-direction: column;
   }
   .contact-us__content-right {
+    margin: 0;
     margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
