@@ -265,6 +265,7 @@ ul.car__specification-list li i {
   bottom: 10%;
   right: 3rem;
   z-index: 10;
+  display: none;
 }
 .btn-test-drive {
   color: white;
