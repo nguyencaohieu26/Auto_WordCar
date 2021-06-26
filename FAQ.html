@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>AutoWorld Contact</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AutoWorld AboutUs</title>
+    <link rel="stylesheet" href="./assets/css/FAQ/FAQ_page.css" />
+    <link rel="stylesheet" href="./assets/css/FAQ/FAQ__responsive.css" />
+        <!-- link base stylesheet -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+        <!-- link home stylesheet -->
+    <link rel="stylesheet" href="assets/css/Home/home_page.css">
+        <!-- link responsive -->
+    <link rel="stylesheet" href="assets/css/Home/home__responsive.css">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -14,28 +22,19 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,100&display=swap"
       rel="stylesheet"
     />
-    <!-- link base stylesheet -->
-    <link rel="stylesheet" href="assets/css/base.css" />
-    <!-- link stylesheet -->
-    <link rel="stylesheet" href="assets/css/Home/home_page.css" />
-    <link rel="stylesheet" href="assets/css/AboutUs/about-us.css" />
-    <!-- link responsive -->
-    <link rel="stylesheet" href="assets/css/Home/home__responsive.css" />
-    <link
-      rel="stylesheet"
-      href="./assets/css/AboutUs/about-us__reponsive.css"
-    />
   </head>
   <body>
-    <section class="home__page">
-      <!-- header -->
+    <div class="faq__container">
+      <div class="faq__message-btn">
+        <i class="fas fa-comment-dots"></i>
+      </div>
       <header class="header">
         <div class="header__scroll">
           <div class="row-index">
             <div class="header__nav">
               <!-- logo -->
               <div class="header__logo">
-                <a href="./index.html" class="header__logo-link">
+                <a href="#" class="header__logo-link">
                   AUTO WORLD <span>WEBSITE</span>
                 </a>
               </div>
@@ -45,11 +44,10 @@
                   <ul class="header__nav-list">
                     <li class="header__nav-item">
                       <a
-                        href="./index.html"
+                        href="#"
                         class="header__nav-link header__nav-link--active"
+                        >HOME</a
                       >
-                        HOME
-                      </a>
                     </li>
                     <li class="header__nav-item">
                       <a href="#" class="header__nav-link">
@@ -102,12 +100,10 @@
                       <!-- submenu c1 -->
                       <ul class="nav-child__list">
                         <li class="nav__child-item">
-                          <a href="./about-us.html" class="nav-child__link"
-                            >ABOUT US</a
-                          >
+                          <a href="#" class="nav-child__link">ABOUT US</a>
                         </li>
                         <li class="nav__child-item">
-                          <a href="./Blog.html" class="nav-child__link">BLOG</a>
+                          <a href="#" class="nav-child__link">BLOG</a>
                         </li>
                         <li class="nav__child-item">
                           <a href="#" class="nav-child__link">TEAM</a>
@@ -207,122 +203,242 @@
           </div>
         </div>
       </div>
-      <!-- top-image -->
-      <div class="top-image">
-        <div class="top">
-          <img src="./assets/image/about-us/about us.jpg" alt="Top Image" />
+      <!-- IMG -->
+      <section class="video__index" id="top__video" >
+        <div class="top__image">
+          <img src="./assets/image/faq/banner/faq1.jpg">
         </div>
-      </div>
-      <!-- about-us -->
-      <div class="k-about-us">
-        <div class="row-index">
-          <div class="h-about-us">
-            <div class="img-about-us">
-              <img src="./assets/image/about-us/img-about-us.jpg" />
+        <div class="video__index-content">
+          <h2 class="home__heading">F<span>A</span>Q</h2>
+          <a href="#" class="btn btn-contact-us">CONTACT US</a>
+        </div>
+
+      </section>
+      <!-- FAQ -->
+      <section>
+        <div class="faq col">
+          <!-- main content -->
+          <div class="faq__main-content">
+            <div class="faq__main-content-item">
+              <div class="faq__title">
+                <a class="showContent" href="#"><i class="fas fa-angle-up"></i></a>
+                <h3>HOW CAN WE MOVATIVE OURSELVES</h3>
+              </div>
+              <div class="faq__sub-content">
+                <h4 class="faq__sub-title">WHAT MADE EACH OF THESE PEOPLE SO SUCCESSFUL?</h4>
+                <p>
+                  Motivation is not an accident or something that someone else can 
+                  give you — you are the only one with the power to motivate you. 
+                  Motivation cannot be an external force, it must come from within 
+                  as the natural product of your desire to achieve something and 
+                  your belief that you are capable to succeed at your goal.
+                </p>
+                <ul>
+                  <li>
+                    1. Success isn’t really that difficult.
+                  </li>
+                  <li>
+                    2. There is a significant portion of the population here in North 
+                    America.
+                  </li>
+                  <li>
+                    3. So they then have a built-in excuse when things don’t go their 
+                    way! Pretty sad situation, to say the least.
+                  </li>
+                  <li>
+                    4. For those of you who are serious about having more, doing more.
+                  </li> 
+                </ul>
+              </div>
             </div>
-            <div class="word-about-us">
-              <h3 class="heading-about-us">Welcome to Auto Car</h3>
-              <p class="date-about-us">March 2nd, 2021</p>
-              <p class="content-about-us">
-                Lorem Ipsum has been the industry’s standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book. It has survived
-                not only five centuries, but also the leap into electronic
-                typesetting, remaining essentially unchanged. It was popularised
-                in the 1960s with the release of Letraset sheets containing
-                Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using ‘Content
-                here, content here’, making it look like readable English. Many
-                desktop publishing packages and web page editors now use Lorem
-                Ipsum as their default model text, and a search for ‘lorem
-                ipsum’ will uncover many web sites still in their infancy.
-                Various versions have evolved over the years, sometimes by
-                accident.
-              </p>
-              <p class="content-about-us">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don’t look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn’t anything embarrassing
-                hidden in the middle of text. All the Lorem Ipsum generators on
-                the Internet tend to repeat predefined chunks as necessary,
-                making this the first true generator on the Internet. It uses a
-                dictionary of over 200 Latin words, combined with a handful of
-                model sentence structures, to generate Lorem Ipsum which looks
-                reasonable. The generated Lorem Ipsum is therefore always free
-                from repetition, injected humour, or non-characteristic words
-                etc.
-              </p>
-              <!-- about-share -->
-              <div class="about-share">
-                <div class="about-icon">
-                  <span>Share: </span>
-                  <a href="#" class="icon-link">
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                  <a href="#" class="icon-link">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                  <a href="#" class="icon-link">
-                    <i class="fab fa-google"></i>
-                  </a>
-                </div>
+            <div class="faq__main-content-item">
+              <div class="faq__title">
+                <a class="showContent" href="#"><i class="fas fa-angle-up"></i></a>
+                <h3>Was this just another little prank, courtesy of a mischievous Universe?</h3>
+              </div>
+              <div class="faq__sub-content">
+                <h4 class="faq__sub-title">MAYBE EVEN A CALM INDIFFERENCE?</h4>
+                <p>
+                  But haven’t you seen people who seem to coast into good things, 
+                  like the farmer who found the Hope Diamond? I’ve known people 
+                  like that. In fact, after I’d been in Japan for a while and had 
+                  set up a “channel” for business to flow through, I could just 
+                  think about receiving more money, and I’d get an immediate surge 
+                  of business within hours.
+                </p>
+                <ul>
+                  <li>
+                    1. This pattern went on for 16 or 17 years.
+                  </li>
+                  <li>
+                    2. So it wasn’t an occasional fluke.
+                  </li>
+                  <li>
+                    3. No matter what term you use, it’s basically the same thing.
+                  </li>
+                  <li>
+                    4. Achieving their dream doesn’t appear to have a lot to do 
+                    with burning desire.
+                  </li> 
+                </ul>
+              </div>
+            </div>
+            <div class="faq__main-content-item">
+              <div class="faq__title">
+                <a class="showContent" href="#"><i class="fas fa-angle-up"></i></a>
+                <h3>Do you feel that you have lived life?</h3>
+              </div>
+              <div class="faq__sub-content">
+                <h4 class="faq__sub-title">HOW DOES THAT FEEL?</h4>
+                <p>
+                  How do you affect those around you? How do they feel? Absorb 
+                  every aspect of this path that you can take today if you so 
+                  choose. Notice everything that you need to know about what it 
+                  will be like if you carry on with the same behaviour, putting 
+                  off change. Drift back to where the path splits. Step Five: Now 
+                  take a step out on to the path to the right. This is where you 
+                  create powerful, progressive change.
+                </p>
+                <ul>
+                  <li>
+                    1. Notice the sense of freedom in your thoughts.
+                  </li>
+                  <li>
+                    2. They often mean leaving the perception of security in order 
+                    to discover your personal freedom.
+                  </li>
+                  <li>
+                    3. These are the changes that will bring happiness and 
+                    satisfaction into your life. Just go there now.
+                  </li>
+                  <li>
+                    4. You have the freedom to be how you want to be.
+                  </li> 
+                </ul>
               </div>
             </div>
           </div>
-          <div class="o-about-out">
-            <div class="row-index">
-              <h3>Delve into our heritage and our services</h3>
-              <div class="o">
-                <div class="o-list">
-                  <img
-                    src="./assets/image/about-us/history1.jpg"
-                    class="o-image"
-                  />
-                  <p class="o-heading">
-                    <a href="#"> OUR HISTORY </a>
-                  </p>
-                  <p class="o-content">
-                    Everything you ever wanted to know about us, from patrols
-                    and badges to facts and figures
-                  </p>
+          <!-- aside content -->
+          <div class="faq__aside-content">
+            <div class="aside-content__search">
+              <h3 class="under-line">SEARCH</h3>
+              <form>
+                <input type="text" placeholder="Search">
+                <input type="submit" value="GO">
+              </form>
+            </div>
+            <div class="aside-content__recent-posts">
+              <h3 class="under-line">RECENT POSTS</h3>
+              <div class="recent-posts__posts">
+                <img src="./assets/image/faq/recent-post/pic1.jpg">
+                <div class="recent-post__title">
+                  <a>Buy your dream car</a>
+                  <span>
+                    <i class="fas fa-calendar-alt"></i>
+                    May 17, 2021
+                  </span>
                 </div>
-                <div class="o-list">
-                  <img
-                    src="./assets/image/about-us/history2.jpg"
-                    class="o-image"
-                  />
-                  <p class="o-heading">
-                    <a href="#"> OUR CURRENT </a>
-                  </p>
-                  <p class="o-content">
-                    Everything you ever wanted to know about us, from patrols
-                    and badges to facts and figures
-                  </p>
+              </div>
+              <div class="recent-posts__posts">
+                <img src="./assets/image/faq/recent-post/pic2.jpg">
+                <div class="recent-post__title">
+                  <a>Does Your Life Lack Meaning</a>
+                  <span>
+                    <i class="fas fa-calendar-alt"></i>
+                    May 17, 2021
+                  </span>
                 </div>
-                <div class="o-list">
-                  <img
-                    src="./assets/image/about-us/history3.jpg"
-                    class="o-image"
-                  />
-                  <p class="o-heading">
-                    <a href="#"> OUR FUTURE </a>
-                  </p>
-                  <p class="o-content">
-                    Everything you ever wanted to know about us, from patrols
-                    and badges to facts and figures
-                  </p>
+              </div>
+              <div class="recent-posts__posts">
+                <img src="./assets/image/faq/recent-post/pic3.jpg">
+                <div class="recent-post__title">
+                  <a>The A Z Of Motivation</a>
+                  <span>
+                    <i class="fas fa-calendar-alt"></i>
+                    May 17, 2021
+                  </span>
+                </div>
+              </div>
+              <div class="recent-posts__posts">
+                <img src="./assets/image/faq/recent-post/pic4.jpg">
+                <div class="recent-post__title">
+                  <a>Motivation In Life</a>
+                  <span>
+                    <i class="fas fa-calendar-alt"></i>
+                    May 17, 2021
+                  </span>
+                </div>
+              </div>
+              <div class="recent-posts__posts">
+                <img src="./assets/image/faq/recent-post/pic5.jpg">
+                <div class="recent-post__title">
+                  <a>Time to race</a>
+                  <span>
+                    <i class="fas fa-calendar-alt"></i>
+                    May 17, 2021
+                  </span>
                 </div>
               </div>
             </div>
+            <div class="aside-content__category-dropdown">
+              <h3 class="under-line">CATEGORY WITH DROPDOWN</h3>
+              <form>
+                <input placeholder="Select Category">
+              </form>
+            </div>
+            <div class="aside-content__comments">
+              <h3 class="under-line">COMMENTS</h3>
+              <ul>
+                <li><span>superadmin on </span><a href="#">Buy your dream car</a></li>
+                <li><span>superadmin on </span><a href="#">Buy your dream car</a></li>
+                <li><span>superadmin on </span><a href="#">Buy your dream car</a></li>
+                <li><span>superadmin on </span><a href="#">Buy your dream car</a></li>
+                <li><span>Maria on </span><a href="#">Woo Ninja</a></li>
+              </ul>
+            </div>
+            <div class="aside-content__meta">
+              <h3 class="under-line">META</h3>
+              <ul>
+                <li><i class="fas fa-chevron-right"></i> <a href="#">Log in</a></li>
+                <li><i class="fas fa-chevron-right"></i> <a href="#">Entries <abbr>RSS</abbr></a></li>
+                <li><i class="fas fa-chevron-right"></i> <a href="#">Comments <abbr>RSS</abbr></a></li>
+                <li><i class="fas fa-chevron-right"></i> <a href="#">WordPress.org</a></li>
+              </ul>
+            </div>
+            <div class="aside-content__tag-cloud">
+              <h3 class="under-line">TAG CLOUD</h3>
+              <ul>
+                <li><a href="#">Auto</a></li>
+                <li><a href="#">Autodealer Car Dealer Wordpress Theme</a></li>
+                <li><a href="#">Auto Dealer Wordpress Theme</a></li>
+                <li><a href="#">Automotive</a></li>
+                <li><a href="#">Automotive Listing Template</a></li>
+                <li><a href="#">Automotive Wordpress Theme</a></li>
+                <li><a href="#">Automotive Wordpress Themes</a></li>
+                <li><a href="#">Best Car Dealer Wordpress Themes</a></li>
+                <li><a href="#">Car Dealer</a></li>
+                <li><a href="#">Car Dealership Theme Wordpress</a></li>
+                <li><a href="#">Car Dealer Templates For Wordpress</a></li>
+                <li><a href="#">Car Dealer Website Template</a></li>
+                <li><a href="#">Car Dealer Website Template Wordpress</a></li>
+                <li><a href="#">Car Dealer Website Theme</a></li>
+                <li><a href="#">Car Dealer Wordpress Theme</a></li>
+                <li><a href="#">Car Dealer Wordpress Themes</a></li>
+                <li><a href="#">Car Dealer Wp Theme</a></li>
+                <li><a href="#">Car Listing Template</a></li>
+                <li><a href="#">Car Website Wordpress Theme</a></li>
+                <li><a href="#">Car Wordpress Theme</a></li>
+                <li><a href="#">Classified</a></li>
+                <li><a href="#">Dealership Wordpress</a></li>
+                <li><a href="#">Responsive Wordpress Themes</a></li>
+                <li><a href="#">Used Car Dealer Website Design</a></li>
+                <li><a href="#">Vehicle Listing </a></li>
+                <li><a href="#">Wordpress Auto Dealership Theme</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- footer -->
       <footer class="footer">
         <div class="footer__details">
@@ -416,8 +532,8 @@
                 <div class="footer__top-item">
                   <h3 class="footer__top-heading">Subscribe</h3>
                   <p>
-                    Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit.
                   </p>
                   <form action="#" class="footer-contact">
                     <input type="text" placeholder="Enter Address" />
@@ -463,7 +579,7 @@
           </div>
         </div>
       </footer>
-    </section>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       // smooth scroll
