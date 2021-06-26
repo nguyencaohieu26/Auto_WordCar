@@ -14,6 +14,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    order: -1;
   }
   .contact-us__content-right-items {
     width: 48%;
