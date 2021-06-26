@@ -3,6 +3,33 @@
   width: 90vw;
   margin: auto;
 }
+/* banner and text on banner */
+.top__image {
+  width: 100%;
+  height: 90vh;
+}
+.video__index::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  opacity: 20%;
+  height: 90vh;
+  width: 100%;
+}
+.video__index video {
+  width: 100%;
+}
+.video__index-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  text-align: center;
+  color: white;
+  z-index: 4;
+  width: 60%;
+}
 /* icon */
 .contact-us__content .fas {
   color: var(--primary-color);

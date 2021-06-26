@@ -31,24 +31,23 @@ a {
 /* banner and text on banner */
 .top__image {
   width: 100%;
-  height: 100%;
+  height: 90vh;
 }
 .video__index::after {
   position: absolute;
   content: "";
   top: 0;
   left: 0;
-  z-index: 3;
-  height: 95vh;
+  height: 90vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: initial;
 }
 .video__index video {
   width: 100%;
 }
 .video__index-content {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -30%);
   text-align: center;
@@ -142,7 +141,7 @@ p,
 }
 .aside-content__search input:last-child:hover {
   cursor: pointer;
-  background-color: #000;
+  background-color: #808080;
   color: #fff;
   transition: 0.5s;
 }
@@ -187,7 +186,8 @@ p,
   color: var(--primary-color);
 }
 .aside-content__comments a:hover {
-  filter: brightness(2);
+  color: #808080;
+  filter: brightness(1.5);
 }
 /* aside content meta */
 .aside-content__meta .fas {
