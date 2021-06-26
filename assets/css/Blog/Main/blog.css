@@ -1,0 +1,79 @@
+/* top-image-blog */
+.top-blog {
+    position: relative;
+    height: 80vh;
+}
+.word-top-blog {
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.word1 {
+    background-color: black;
+    color: var(--primary-color);
+    font-size: 3rem;
+    letter-spacing: 4px;
+    opacity: 0.6;
+    padding: 0.5rem 1rem;
+}
+.word1:hover {
+    background-color: brown;
+    color: white;
+}
+.word2 {
+    letter-spacing: 4px;
+    font-size: 3rem;
+}
+.word3 {
+    padding: 1rem;
+    font-size: 16px;
+}
+
+/* blog */
+.k-blog {
+    margin: 5rem 1rem;
+}
+.blog-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+.blog-item {
+    position: relative;
+}
+.img-blog {
+    max-height: 60%;
+}
+.heading-blog {
+    padding-top: 1rem;
+}
+.by-content {
+    text-align: right;
+    font-size: 12px;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+.content-blog {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-size: 13px;
+    margin-bottom: 1rem;
+}
+.continue-item {
+    border: 1px solid black;
+    color: black;
+    text-align: right;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+}
+.continue-item:hover {
+    background-color: rgb(168, 168, 168);
+    color: black;
+}
