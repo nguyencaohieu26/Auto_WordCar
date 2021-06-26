@@ -1,4 +1,12 @@
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1020px) {
+/* top-image-blog */
+.top-blog {
+    padding: 4rem 30%;
+}
+.word-top-blog {
+    font-size: 1.7rem;
+}
+/* blog-child */
 .h-blog-child {
     flex-wrap: wrap;
 }
@@ -9,5 +17,14 @@
 .word-blog-child {
     width: 100%;
     padding-top: 2rem;
+}
+}
+
+@media only screen and (max-width: 650px) {
+.top-blog {
+    padding: 5rem 25%;
+}
+.word-top-blog {
+    font-size: 1.5rem;
 }
 }

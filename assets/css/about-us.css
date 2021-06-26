@@ -1,0 +1,96 @@
+/* top-image */
+.top {
+  position: relative;
+}
+.word-top-image {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  color: white;
+}
+
+/* about-us */
+.k-about-us {
+  margin: 5rem 1rem 2rem;
+}
+.h-about-us {
+  display: flex;
+  padding: 1rem;
+  background-color: rgb(241, 241, 241);
+}
+.img-about-us {
+  width: 40%;
+  padding-right: 1rem;
+}
+.word-about-us {
+  width: 60%;
+  padding-left: 1rem;
+}
+.heading-about-us {
+  text-align: center;
+  font-size: 20px;
+  padding: 1rem;
+}
+.date--about-us {
+  font-size: 14px;
+  padding-bottom: 1.2rem;
+}
+.content-about-us {
+  font-size: 12px;
+  padding: 1rem;
+}
+
+/*about-share*/
+.about-share {
+  padding: 1rem 0;
+}
+.about-icon span {
+  color: rgb(48, 48, 48);
+}
+.icon-link {
+  color: black;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+.icon-link:hover {
+  background-color: rgb(189, 189, 189);
+  color: black;
+}
+
+/* o-about-out */
+.o-about-out {
+  display: flex;
+  margin: 5rem 0;
+  background-color: rgb(241, 241, 241);
+}
+.o-about-out h3 {
+  text-align: center;
+  padding-top: 2rem;
+}
+.o {
+  display: flex;
+  margin: 1rem;
+}
+.o-list {
+  max-width: calc(100% / 3 - 1rem);
+  padding: 10px;
+}
+.o-image {
+  height: 18rem;
+}
+.o-heading {
+  text-align: center;
+  padding: 1rem 0;
+}
+.o-heading a {
+  color: black;
+  padding: 0.5rem 1rem;
+}
+.o-heading a:hover {
+  background-color: rgb(167, 167, 167);
+  color: black;
+}
+.o-content {
+  font-size: 12px;
+}
