@@ -1,11 +1,14 @@
+/* base setting css */
 .col {
   width: 90vw;
   margin: auto;
 }
+/* icon */
 .contact-us__content .fas {
   color: var(--primary-color);
   font-size: 3rem;
 }
+/* contact us */
 .contact-us__content {
   margin-bottom: 100px;
 }

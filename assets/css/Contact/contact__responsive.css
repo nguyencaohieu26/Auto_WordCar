@@ -1,8 +1,10 @@
+/* for desktop */
 @media only screen and (max-width: 1024px) {
   .contact-us__content-left input {
     width: 100%;
   }
 }
+/* medium devices */
 @media only screen and (max-width: 768px) {
   .contact-us__form {
     display: flex;
@@ -20,9 +22,14 @@
     width: 48%;
   }
 }
+/* small devices */
 @media only screen and (max-width: 600px) {
   .contact-us__content-right-items,
   .contact-us__content-left input {
     width: 100%;
+  }
+  .contact-us__content-right {
+    margin: 0;
+    margin: 50px 0px;
   }
 }
