@@ -17,7 +17,7 @@ a {
   position: fixed;
   top: 50%;
   right: 0;
-  z-index: 9999;
+  z-index: 80;
 }
 .faq__message-btn .fas {
   font-size: 5rem;
