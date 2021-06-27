@@ -1,4 +1,4 @@
-/* base setting css */ 
+/* base setting css */
 .container {
   width: 100%;
   height: 100%;
@@ -29,31 +29,31 @@ a {
   filter: brightness(1.2);
 }
 /* banner and text on banner */
-.top__image {
-  width: 100%;
-  height: 90vh;
+.header__faq-image {
+  position: relative;
+  height: 80vh;
 }
-.video__index::after {
-  position: absolute;
+.header__faq-image::after {
   content: "";
+  position: absolute;
   top: 0;
   left: 0;
-  height: 90vh;
+  height: 80vh;
   width: 100%;
-  background-color: initial;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
 }
-.video__index video {
-  width: 100%;
+.top__image {
+  height: 80vh;
 }
-.video__index-content {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -30%);
-  text-align: center;
+.header__faq-image-content {
   color: white;
-  z-index: 4;
-  width: 60%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
 }
 /* FAQ */
 /* FAQ main content */
@@ -62,9 +62,13 @@ a {
   margin-top: 50px;
   margin-bottom: 100px;
 }
-.faq h3, 
+.faq h3,
 h4 {
   font-size: 1.8rem;
+  font-weight: 500;
+}
+.faq h4 {
+  font-size: 1.6rem;
 }
 .faq p,
 ul {
@@ -87,16 +91,35 @@ ul {
   display: flex;
   background-color: var(--primary-color);
   color: #fff;
+  cursor: pointer;
 }
-.faq__title,
+/* animate for sub content */
 .faq__sub-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.8s ease-in-out;
+}
+.faq__main-content-item.active .faq__sub-content {
+  max-height: 700px;
+}
+.fas {
+  transition: all 0.4s ease-in-out;
+}
+.faq__main-content-item.active .fas {
+  transform: rotate(180deg);
+}
+.faq__sub-content-details {
   padding: 20px;
+}
+/* ------------------------- */
+.faq__title {
+  padding: 11px;
   align-items: center;
 }
 .faq__main-content-item h4,
 p,
 .faq__main-content-item ul li {
- margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .faq__title .fas {
   font-size: 2.5rem;
@@ -130,18 +153,19 @@ p,
   width: 25px;
 }
 .aside-content__search input {
- border: none;
- background-color: #f2f2f2;
- padding: 10px;
- margin: 0px;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin: 0px;
 }
 .aside-content__search input:last-child {
   background-color: var(--primary-color);
   color: #fff;
+  font-weight: 800;
 }
 .aside-content__search input:last-child:hover {
   cursor: pointer;
-  background-color: #808080;
+  background-color: var(--text-color);
   color: #fff;
   transition: 0.5s;
 }
@@ -151,11 +175,11 @@ p,
 .aside-content__search form {
   display: flex;
 }
- /* recent post css */
+/* recent post css */
 .recent-posts__posts {
   display: flex;
 }
- .recent-posts__posts img {
+.recent-posts__posts img {
   width: 60px;
   height: 60px;
   margin-right: 20px;
@@ -170,7 +194,7 @@ p,
 .recent-posts__title a:hover {
   color: var(--primary-color);
 }
- /* category dropdown */
+/* category dropdown */
 .aside-content__category-dropdown input {
   padding: 10px;
   border: none;
@@ -181,12 +205,12 @@ p,
   outline: none;
   border: solid 1px var(--primary-color);
 }
-  /* aside content comment css */
+/* aside content comment css */
 .aside-content__comments a {
   color: var(--primary-color);
 }
 .aside-content__comments a:hover {
-  color: #808080;
+  color: var(--text-color);
   filter: brightness(1.5);
 }
 /* aside content meta */
