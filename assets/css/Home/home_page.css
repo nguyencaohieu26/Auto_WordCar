@@ -682,7 +682,7 @@
       rgba(38, 44, 65, 0.8),
       rgba(13, 21, 43, 0.8)
     ),
-    url(/assets/image/index/send___mess.jpg);
+    url(/send___mess.jpg);
   min-height: 60vh;
   background-position: center center;
   background-size: cover;
