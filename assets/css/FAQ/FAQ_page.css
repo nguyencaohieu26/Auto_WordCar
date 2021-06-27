@@ -234,3 +234,54 @@ p,
   color: #fff;
   transition: 0.5s;
 }
+/*  */
+.faq__main-btns {
+  margin-bottom: 3rem;
+}
+.faq__main-btn-chose {
+  position: relative;
+  display: inline-block;
+  min-width: 15rem;
+  padding: 1rem;
+  text-align: center;
+  z-index: 2;
+  color: black;
+  height: 4rem;
+  border-radius: 3px;
+}
+
+.faq__main-btn-chose::after {
+  border-radius: 3px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  width: 100%;
+  background-color: var(--text-color);
+  z-index: 3;
+  transform: scaleY(0);
+  transform-origin: center bottom;
+  transition: transform 0.3s ease-in;
+}
+.faq__main-btn-chose:hover {
+  color: white;
+}
+.faq__main-btn-chose:hover::after {
+  transform: scaleY(1);
+}
+.faq__main-btn-chose span {
+  position: relative;
+  z-index: 6;
+}
+/*  */
+.faq__main-details-item {
+  display: none;
+}
+.faq__main-details-item.active {
+  display: block;
+}
+.faq__main-btn-chose.active {
+  color: white;
+  background-color: var(--text-color);
+}
