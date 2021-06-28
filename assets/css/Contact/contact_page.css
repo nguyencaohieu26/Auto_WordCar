@@ -13,7 +13,7 @@
   content: "";
   top: 0;
   left: 0;
-  opacity: 20%;
+  opacity: 0.7;
   height: 90vh;
   width: 100%;
 }
@@ -96,7 +96,7 @@
   font-size: 3rem;
 }
 /* GG MAP API */
-  #map {
-    height: 400px;
-    width: 100%;
+#map {
+  height: 400px;
+  width: 100%;
 }

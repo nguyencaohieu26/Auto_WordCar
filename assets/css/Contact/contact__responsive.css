@@ -32,4 +32,7 @@
     margin: 0;
     margin: 50px 0px;
   }
+  .video__index::after {
+    height: 70vh;
+  }
 }

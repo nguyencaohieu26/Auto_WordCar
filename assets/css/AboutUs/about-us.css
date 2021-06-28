@@ -22,8 +22,10 @@
 }
 .heading-about-us {
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   padding: 1rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
 }
 .date--about-us {
   font-size: 14px;
@@ -61,6 +63,9 @@
 .o-about-out h3 {
   text-align: center;
   padding-top: 2rem;
+}
+.date-about-us {
+  padding-left: 10px;
 }
 .o {
   display: flex;
