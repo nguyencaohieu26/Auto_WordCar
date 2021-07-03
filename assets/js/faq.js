@@ -4,7 +4,6 @@ const faq__maincontent = document.querySelectorAll(".faq__main-content-item");
 btn_OpenFAQ.forEach(function(item){
   item.addEventListener("click",function(e){
     const contentChose = e.currentTarget.parentElement;
-    const parent = e.currentTarget;
     faq__maincontent.forEach(function(item){
       if(contentChose == item){
         item.classList.toggle("active")
