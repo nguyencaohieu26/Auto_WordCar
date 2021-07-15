@@ -553,7 +553,7 @@
       rgba(75, 88, 131, 0.6),
       rgba(4, 15, 46, 0.7)
     ),
-    url(/assets/image/index/about-fullscreen-1-1920x700.jpg);
+    url(../../image/index/about-fullscreen-1-1920x700.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
@@ -682,7 +682,7 @@
       rgba(38, 44, 65, 0.8),
       rgba(13, 21, 43, 0.8)
     ),
-    url(/assets/image/index/send___mess.jpg);
+    url(../../image/index/send___mess.jpg);
   min-height: 60vh;
   background-position: center center;
   background-size: cover;
